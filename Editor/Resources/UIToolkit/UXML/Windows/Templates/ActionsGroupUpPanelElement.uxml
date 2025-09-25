@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="ActionsGroup-UpPanel-Element" class="unity-base-field" style="flex-grow: 1; max-height: 27px; min-height: 27px; background-color: rgb(47, 47, 47); flex-direction: row; margin-bottom: 0; margin-top: 0; flex-wrap: nowrap; overflow: hidden; align-self: stretch; height: 27px; border-bottom-color: rgb(96, 96, 96); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; margin-right: 0; margin-left: 0;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: flex-start; align-items: stretch; height: 25px;">
+            <ui:TextField picking-mode="Ignore" value="Name" name="gruop-name" class="gruop-name" style="max-width: none; min-width: 20px; margin-left: 5px; margin-top: 3px; margin-bottom: 3px;" />
+            <uie:ToolbarSpacer style="border-right-color: rgba(0, 0, 0, 0); border-right-width: 0; border-left-width: 1px; border-left-color: rgb(147, 147, 147); max-height: none; min-height: auto; margin-bottom: 5px; margin-top: 5px;" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="view-group-button" style="margin-top: 0; margin-bottom: 0; margin-right: 0; font-size: 8px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; min-width: 25px; min-height: 19px; height: 19px; width: 25px; max-width: 25px; max-height: 19px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-direction: row; margin-left: 0; align-self: center;">
+                <ui:VisualElement style="background-image: resource(&apos;Img/View_Icon&apos;); -unity-background-scale-mode: scale-to-fit; flex-grow: 1; margin-top: 3px; margin-right: 3px; margin-bottom: 3px; margin-left: 3px;" />
+            </ui:Button>
+            <ui:Button text="Add Action" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-action-button" style="margin-top: 3px; margin-bottom: 3px; margin-right: 7px; font-size: 8px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+            <uie:ToolbarSpacer style="border-right-color: rgba(0, 0, 0, 0); border-right-width: 0; border-left-width: 1px; border-left-color: rgb(147, 147, 147); max-height: none; min-height: auto; margin-bottom: 5px; margin-top: 5px;" />
+            <ui:VisualElement name="actions-info-panel" style="flex-grow: 1; flex-direction: row; max-width: 60px; min-width: 60px; margin-right: 5px; align-items: center;">
+                <ui:Label tabindex="-1" text="Actions:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="actions-info-label" class="path-label-info" style="margin-left: 3px; margin-right: 0; font-size: 10px;" />
+                <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="actions-value-label" class="path-label-info" style="font-size: 10px;" />
+            </ui:VisualElement>
+            <uie:ToolbarSpacer style="border-right-color: rgba(0, 0, 0, 0); border-right-width: 0; border-left-width: 1px; border-left-color: rgb(147, 147, 147); max-height: none; min-height: auto; margin-bottom: 5px; margin-top: 5px;" />
+            <ui:Label tabindex="-1" text="Path" parse-escape-sequences="true" display-tooltip-when-elided="true" name="path-label" class="path-label-info" style="margin-left: 3px; margin-right: 5px; -unity-text-align: middle-left; min-width: 250px; font-size: 10px; text-overflow: ellipsis;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; min-width: 20px; justify-content: flex-end; flex-direction: row; margin-right: 3px;">
+            <ui:Button text="Delete Group" parse-escape-sequences="true" display-tooltip-when-elided="true" name="delete-group-button" style="max-width: 80px; min-width: 80px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgb(41, 41, 41); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(123, 31, 31); -unity-font-style: bold; margin-top: 3px; margin-bottom: 3px; font-size: 10px;" />
+            <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="remove-action-gruop-button" style="align-self: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

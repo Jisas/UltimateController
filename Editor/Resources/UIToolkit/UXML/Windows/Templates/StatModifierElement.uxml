@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="stat-modifier-element" style="flex-direction: column; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; margin-bottom: 5px;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-around; align-self: auto; align-items: center; display: flex; overflow: hidden; max-height: 23px; min-height: 23px;">
+            <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; align-items: auto; margin-top: 3px; flex-grow: 1;">
+                <ui:Label tabindex="-1" text="character stat" display-tooltip-when-elided="true" name="stat-modifier-tag" style="align-self: flex-start; max-width: none; min-width: auto; opacity: 0.8; -unity-text-align: middle-left;" />
+            </ui:Button>
+            <ui:Button text="-" display-tooltip-when-elided="true" name="remove-stat-modifier-button" style="align-self: center; justify-content: flex-start; align-items: auto; margin-right: 6px; margin-left: 6px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; max-height: 23px; margin-right: 5px; margin-left: -1px; margin-top: 3px; min-height: 23px; overflow: hidden;">
+            <ui:EnumField type="UltimateFramework.Utils.OperationType, UltimateFramework" name="stat-modifier-operation-enum" class="upgrade-element-field" style="min-width: 50%; flex-grow: 1;" />
+            <ui:FloatField value="42,2" name="stat-modifier-value-field" class="upgrade-element-field" style="width: auto; flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; max-height: 23px; min-height: 23px; margin-right: 5px; margin-left: -1px; margin-top: 3px; overflow: hidden;">
+            <ui:EnumField type="UltimateFramework.Utils.ValueType, UltimateFramework" name="stat-modifier-value-type-field" class="upgrade-element-field" style="flex-grow: 1; visibility: visible; display: flex;" />
+            <ui:Label tabindex="-1" text="TO" parse-escape-sequences="true" display-tooltip-when-elided="true" style="flex-grow: 1; -unity-text-align: middle-center; max-width: 20px; min-width: 20px; padding-right: 0; padding-left: 0; -unity-font-style: bold-and-italic; font-size: 10px; text-overflow: clip;" />
+            <ui:EnumField type="UltimateFramework.Utils.ValueTo, UltimateFramework" name="stat-modifier-valueto-enum" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="baseon-container" style="flex-grow: 1; max-height: 23px; min-height: 23px; margin-top: 3px; margin-right: 5px; margin-left: -1px; flex-direction: row; display: none;">
+            <ui:Label tabindex="-1" text="BASE ON" parse-escape-sequences="true" display-tooltip-when-elided="true" style="padding-right: 0; padding-left: 0; flex-grow: 1; -unity-text-align: middle-center; font-size: 10px; -unity-font-style: bold-and-italic; max-width: 50px; min-width: 50px;" />
+            <ui:EnumField type="UltimateFramework.Utils.BaseOn, UltimateFramework" name="stat-modifier-baseon-enum" class="upgrade-element-field" style="flex-grow: 1; display: flex; visibility: visible;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="AttributeElement" style="flex-grow: 0; flex-direction: row; justify-content: space-between; margin-bottom: 3px;">
+        <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 47%; min-width: 47%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; flex-grow: 1; margin-left: 0; margin-right: 0;">
+            <ui:Label tabindex="-1" text="None" display-tooltip-when-elided="true" name="tag" style="align-self: flex-start; opacity: 0.8;" />
+        </ui:Button>
+        <ui:FloatField value="42,2" name="start-value" style="flex-grow: 1; max-width: 46%; min-width: 46%;" />
+        <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="remove-button" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 15px; height: 15px; align-self: center; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; margin-left: 0; margin-right: 5px;" />
+    </ui:VisualElement>
+</ui:UXML>

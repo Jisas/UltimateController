@@ -1,0 +1,119 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="Locomotion-Movement-Right-Template">
+        <ui:VisualElement name="movement-structure" style="display: flex; overflow: hidden;">
+            <ui:VisualElement name="movement-info-panel" style="flex-grow: 1; visibility: visible; flex-direction: row; display: flex;">
+                <ui:VisualElement style="background-color: rgba(0, 0, 0, 0); width: 50%; height: auto; min-height: auto; max-width: 50%; min-width: 50%; flex-grow: 1;">
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 5px; padding-right: 2.5px; padding-top: 5px; padding-bottom: 5px; justify-content: flex-start;">
+                        <ui:VisualElement name="motion-speed-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 50px; min-height: 50px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 0;">
+                            <ui:VisualElement name="motion-speed-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Motion Speed Multiplier" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="motion-speed-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <ui:FloatField label="Motion Speed" value="0" name="motion-speed-field" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="start-cardinals-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 120px; min-height: 120px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px;">
+                            <ui:VisualElement name="start-cardinals-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Start Cardinals" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="start-cardinals-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <uie:ObjectField label="Forward" name="forward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward" name="backward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left" name="left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right" name="right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="four-loop-cardinals-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 120px; min-height: 120px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px; display: none;">
+                            <ui:VisualElement name="four-loop-cardinals-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Loop Cardinal - Four" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="four-loop-cardinals-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <uie:ObjectField label="Forward" name="forward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward" name="backward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left" name="left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right" name="right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="eight-loop-cardinals-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 210px; min-height: 210px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px; display: flex;">
+                            <ui:VisualElement name="eight-loop-cardinals-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Loop Cardinal - Eight" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="eight-loop-cardinals-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <uie:ObjectField label="Forward" name="forward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward" name="backward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left" name="left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right" name="right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Forward Right" name="forward-right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Forward Left" name="forward-left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward Right" name="backward-right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward-Left" name="backward-left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="jump-motion-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 100px; min-height: 100px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px;">
+                            <ui:VisualElement name="jump-motion-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Jump Motion" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="jump-motion-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">
+                                <uie:ObjectField label="Start" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="jump-start-motion-field" />
+                                <uie:ObjectField label="Loop" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="jump-loop-motion-field" />
+                                <uie:ObjectField label="Land" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="jump-land-motion-field" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; width: 50%; max-width: 50%; min-width: 50%;">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 2.5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                        <ui:VisualElement name="stop-cardinals-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 120px; min-height: 120px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 0;">
+                            <ui:VisualElement name="stop-cardinals-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Stop Cardinals" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="stop-cardinals-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <uie:ObjectField label="Forward" name="forward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward" name="backward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left" name="left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right" name="right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="pivot-cardinals-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 120px; min-height: 120px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px;">
+                            <ui:VisualElement name="pivot-cardinals-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Pivot Cardinals" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="pivot-cardinals-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <uie:ObjectField label="Forward" name="forward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Backward" name="backward-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left" name="left-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right" name="right-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="turn-in-place-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 210px; min-height: 210px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px; display: flex;">
+                            <ui:VisualElement name="turn-in-place-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Turn In Place" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="turn-in-place-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <uie:ObjectField label="Right 45º" name="right-45-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right 90º" name="right-90-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right 135º" name="right-135-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Right 180º" name="right-180-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left 45º" name="left-45-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left 90º" name="left-90-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left 135º" name="left-135-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                                <uie:ObjectField label="Left 180º" name="left-180-motion-field" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="jump-config-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 120px; min-height: 120px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 5px;">
+                            <ui:VisualElement name="jump-config-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Jump Config" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="jump-config-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <ui:FloatField label="Height" value="42,2" name="jump-height-field" />
+                                <ui:FloatField label="Gravity" value="42,2" name="jump-gravity-field" />
+                                <ui:FloatField label="Timeout" value="42,2" name="jump-timeout-field" />
+                                <ui:FloatField label="Fall Timeout" value="42,2" name="jump-fall-timeout-field" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; margin-bottom: 5px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-right: 5px; margin-left: 5px;">
+        <ui:Label tabindex="-1" text="Show helping message" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+        <ui:VisualElement name="SwitchElement" class="Switch">
+            <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" class="SwitchOn" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

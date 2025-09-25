@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="rquirement-container" style="flex-grow: 1;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; min-width: auto; min-height: 25px; justify-content: space-between; margin-right: 5px; margin-left: 5px; overflow: hidden; max-height: 25px; margin-bottom: 3px;">
+            <ui:EnumField label="Use for" type="UltimateFramework.Utils.RequirementFor, UltimateFramework" name="upgrade-usefor-enum" style="max-width: 90%; min-width: 90%;" />
+            <ui:Button text="-" display-tooltip-when-elided="true" name="remove-requirement-button" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; max-width: 20px; min-width: 20px; max-height: 15px; min-height: 15px; align-self: center; width: auto; align-items: auto; justify-content: flex-start;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="useItem-option-container" style="flex-grow: 1; flex-direction: row; margin-right: 5px; margin-left: 5px; overflow: hidden; max-height: 25px; min-height: 25px; display: none; margin-bottom: 5px; justify-content: space-between; align-items: stretch; min-width: auto;">
+            <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 78%; min-width: 78%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:Label tabindex="-1" text="Stat or Attribute" display-tooltip-when-elided="true" name="attribute-tag" style="align-self: flex-start; opacity: 0.8; -unity-text-align: middle-left;" />
+            </ui:Button>
+            <ui:FloatField label="Float Field" value="42,2" name="attribute-value-field" class="stat-value-field" style="max-width: 20%; min-width: 20%; width: auto; padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-self: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="upgrade-option-container" style="flex-grow: 1; flex-direction: column; margin-right: 5px; margin-left: 5px; overflow: hidden; margin-bottom: 5px; display: none;">
+            <ui:TextField picking-mode="Ignore" label="Upgrade" name="upgrade-name-field" tooltip="name of the upgrade to which this requirement will be applied" />
+            <ui:TextField picking-mode="Ignore" label="Item" name="item-name-field" tooltip="name of the item required for upgrade" />
+            <ui:IntegerField label="Amount" value="0" name="item-ammount-field" tooltip="quantity of the item required for the upgrade" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

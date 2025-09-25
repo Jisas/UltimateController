@@ -1,0 +1,76 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="Locomotion-Generals-Right-Template">
+        <ui:VisualElement name="generals-structure" style="display: flex; overflow: hidden;">
+            <ui:VisualElement name="generals-info-panel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); visibility: visible; flex-direction: row; align-self: auto; display: flex;">
+                <ui:VisualElement style="background-color: rgba(0, 0, 0, 0); width: 50%; height: auto; min-height: auto; max-width: 50%; min-width: 50%; flex-grow: 1;">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 5px; padding-right: 2.5px; padding-top: 5px; padding-bottom: 5px; justify-content: flex-start;">
+                        <ui:VisualElement name="start-config-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 90px; min-height: 90px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 0;">
+                            <ui:VisualElement name="start-config-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Start Config" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="start-config-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px;">
+                                <ui:VisualElement name="BooleanSwitch" style="align-self: stretch; justify-content: space-around;">
+                                    <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; justify-content: space-between; margin-bottom: 3px; margin-top: 3px; align-self: stretch; margin-right: 3px;">
+                                        <ui:Label tabindex="-1" text="Use eight directional" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: stretch; -unity-font-style: italic; -unity-text-align: middle-left;" />
+                                        <ui:VisualElement name="SwitchElement" class="Switch" style="justify-content: flex-start; flex-direction: row; align-self: stretch;">
+                                            <ui:Button text="Off" parse-escape-sequences="true" display-tooltip-when-elided="true" name="use-eight-directional-button" class="SwitchOn SwitchOff" style="align-items: stretch; margin-top: 5px; margin-bottom: 5px;" />
+                                        </ui:VisualElement>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                                <ui:VisualElement name="BooleanSwitch" style="align-self: stretch; justify-content: space-around;">
+                                    <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; justify-content: space-between; margin-bottom: 3px; margin-top: 3px; align-self: stretch; margin-right: 3px;">
+                                        <ui:Label tabindex="-1" text="Use override at starup" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: stretch; -unity-font-style: italic; -unity-text-align: middle-left;" />
+                                        <ui:VisualElement name="SwitchElement" class="Switch" style="justify-content: flex-start; flex-direction: row; align-self: stretch;">
+                                            <ui:Button text="Off" parse-escape-sequences="true" display-tooltip-when-elided="true" name="use-override-at-starup-button" class="SwitchOn SwitchOff" style="align-items: stretch; margin-top: 5px; margin-bottom: 5px;" />
+                                        </ui:VisualElement>
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="movement-config-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 125px; min-height: 125px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; justify-content: flex-start; margin-top: 5px;">
+                            <ui:VisualElement name="movement-config-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: space-between; flex-direction: row;">
+                                <ui:Label tabindex="-1" text="Movement Config" display-tooltip-when-elided="true" style="align-self: center; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="movement-config-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); overflow: hidden; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 0; min-height: auto; min-width: auto; flex-direction: column; justify-content: space-between; align-self: auto; align-items: stretch;">
+                                <ui:FloatField label="Walk Speed" value="42,2" name="walk-speed-field" />
+                                <ui:FloatField label="Jog Speed" value="42,2" name="jog-speed-field" />
+                                <ui:Slider label="Rotation Smooth" value="0.12" high-value="1" name="rotation-smooth-slider" show-input-field="true" inverted="false" />
+                                <ui:FloatField label="Speed Change Rate" value="0" name="speed-change-rate-field" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 50%; max-width: 50%; min-width: 50%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 2.5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                        <ui:VisualElement name="idle-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 50px; min-height: 50px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden;">
+                            <ui:VisualElement name="idle-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                                <ui:Label tabindex="-1" text="Idle" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="idle-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: auto; justify-content: space-around; margin-top: 5px; margin-bottom: 5px; margin-right: 5px; margin-left: 5px;">
+                                <uie:ObjectField label="Idle" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="idle-motion-field" style="margin-top: 0; margin-bottom: 0;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="crouch-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 80px; min-height: 80px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; justify-content: flex-start; margin-top: 5px;">
+                            <ui:VisualElement name="crouch-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: space-between; flex-direction: row;">
+                                <ui:Label tabindex="-1" text="Crouch General" display-tooltip-when-elided="true" style="align-self: center; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="crouch-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); overflow: hidden; flex-direction: column; justify-content: space-around; align-self: auto; align-items: stretch; margin-right: 5px; margin-left: 5px; margin-top: 5px; margin-bottom: 0;">
+                                <uie:ObjectField label="Crouch Entry" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="crouch-entry-motion-field" />
+                                <uie:ObjectField label="Crouch Exit" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="crouch-exit-motion-field" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="idle-break-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 160px; min-height: 160px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; justify-content: flex-start; margin-top: 5px;">
+                            <ui:VisualElement name="idle-break-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: space-between; flex-direction: row;">
+                                <ui:Label tabindex="-1" text="Idle Breaks" display-tooltip-when-elided="true" style="align-self: center; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                                <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-idle-break-button" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 15px; height: 15px; align-self: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-right: 7px; background-color: rgb(46, 46, 46); -unity-text-align: middle-center;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="idle-break-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); overflow: hidden; flex-direction: column; justify-content: space-around; align-self: auto; align-items: stretch; margin-right: 5px; margin-left: 5px; margin-top: 5px; margin-bottom: 0;">
+                                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="idle-break-scroll-view" style="flex-grow: 1;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,20 @@
+{
+    "name": "UltimateFramework.Editor",
+    "rootNamespace": "UltimateFramework.Editor",
+    "references": [
+        "GUID:5998c1c448aa6b44894ced3c97e4e600",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:64ab927bada38314780d6f4fb2125e08"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

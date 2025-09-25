@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab5e6bbb25682004c8394d29b07fea60, type: 3}
+  m_Name: SettingsConfigData
+  m_EditorClassIdentifier: 
+  actionsMasterData: {fileID: 11400000, guid: 54e0275ad21c74045ace579df10bab90, type: 2}
+  actionGroupsPathSelection: 0
+  actionGroupsPath: Assets/Packages/UltimateFramework/Resources/Data/Actions/Groups
+  actionIndividualsPathSelection: 0
+  actionIndividualsPath: Assets/UltimateFramework/Resources/Data/Actions/Individual
+  actionsPathSelection: 0
+  actionsScriptsPath: Assets/UltimateFramework/Systems/ActionsSystem/Actions
+  itemDB: {fileID: 11400000, guid: f0b7255cfac9a474d993a42092ec8d68, type: 2}
+  statesPathSelection: 0
+  generalStatesScriptsPath: Assets/UltimateFramework/FullExample/Assets/States
+  armorStateScriptsPath: Assets/UltimateFramework/FullExample/Assets/States/Armors
+  weaponStateScriptsPath: Assets/UltimateFramework/FullExample/Assets/States/Weapons
+  consumableStateScriptsPath: Assets/UltimateFramework/FullExample/Assets/States/Consumables
+  showHelpingMessage: 1
+  useDiferentPaths: 1

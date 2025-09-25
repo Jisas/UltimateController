@@ -1,0 +1,273 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ad22089fece1c45907f82ee4da71ce, type: 3}
+  m_Name: InputIconsMap
+  m_EditorClassIdentifier: 
+  inputIcons:
+  - Name: Xbox Controller
+    control: 0
+    buttonSouth: {fileID: 21300000, guid: ec435d5b47a4e9a459741d2762587552, type: 3}
+    buttonNorth: {fileID: 21300000, guid: 11b3a8a998a795c4987dde7b207fc809, type: 3}
+    buttonEast: {fileID: 21300000, guid: 271a694a07b824042829495d786a35fe, type: 3}
+    buttonWest: {fileID: 21300000, guid: 696f792e1f3e69549b967a21190cf6f7, type: 3}
+    startButton: {fileID: 21300000, guid: e212101c8e652c84999c231090f38b5e, type: 3}
+    selectButton: {fileID: 21300000, guid: dbb91b479b78d724eac8c94f610cab03, type: 3}
+    leftTrigger: {fileID: 21300000, guid: 28d0842db48e87842a95446109c9f6ca, type: 3}
+    rightTrigger: {fileID: 21300000, guid: bd052f2b12109a1459c413c0a018790e, type: 3}
+    leftShoulder: {fileID: 21300000, guid: 7b9255fabe5cb5f47bcc6d1efea0c96d, type: 3}
+    rightShoulder: {fileID: 21300000, guid: f8d316fddb429394bb0f78cce3f36aad, type: 3}
+    dpad: {fileID: 21300000, guid: 61b54a964a81a92478ca5d9b2c7653dc, type: 3}
+    dpadUp: {fileID: 21300000, guid: 8086c8f3f7d81024e991d5c794be25e2, type: 3}
+    dpadDown: {fileID: 21300000, guid: 04fa3df84fd91e64d8d39ec7a14bf509, type: 3}
+    dpadLeft: {fileID: 21300000, guid: 8508796806bc5db4398d6e44df11ed31, type: 3}
+    dpadRight: {fileID: 21300000, guid: a320e7761ade3fa4fb240d40053ddf36, type: 3}
+    leftStick: {fileID: 21300000, guid: bcd565c5a7259ef42bb88de8e9719529, type: 3}
+    rightStick: {fileID: 21300000, guid: 12e057ba9f9bdac42878b7178b1319ba, type: 3}
+    leftStickPress: {fileID: 21300000, guid: 8b2835e1e936c6249be6925a217cbec5, type: 3}
+    rightStickPress: {fileID: 21300000, guid: b3b28f9bf431f5045bbaf9b260fb69e8, type: 3}
+    LeftClick: {fileID: 0}
+    MiddleClick: {fileID: 0}
+    RightClick: {fileID: 0}
+    F1: {fileID: 0}
+    F2: {fileID: 0}
+    F3: {fileID: 0}
+    F4: {fileID: 0}
+    F5: {fileID: 0}
+    F6: {fileID: 0}
+    F7: {fileID: 0}
+    F8: {fileID: 0}
+    F9: {fileID: 0}
+    F10: {fileID: 0}
+    F11: {fileID: 0}
+    F12: {fileID: 0}
+    Keyboard0: {fileID: 0}
+    Keyboard1: {fileID: 0}
+    Keyboard2: {fileID: 0}
+    Keyboard3: {fileID: 0}
+    Keyboard4: {fileID: 0}
+    Keyboard5: {fileID: 0}
+    Keyboard6: {fileID: 0}
+    Keyboard7: {fileID: 0}
+    Keyboard8: {fileID: 0}
+    Keyboard9: {fileID: 0}
+    Q: {fileID: 0}
+    W: {fileID: 0}
+    E: {fileID: 0}
+    R: {fileID: 0}
+    T: {fileID: 0}
+    Y: {fileID: 0}
+    U: {fileID: 0}
+    I: {fileID: 0}
+    O: {fileID: 0}
+    P: {fileID: 0}
+    A: {fileID: 0}
+    S: {fileID: 0}
+    D: {fileID: 0}
+    F: {fileID: 0}
+    G: {fileID: 0}
+    H: {fileID: 0}
+    J: {fileID: 0}
+    K: {fileID: 0}
+    L: {fileID: 0}
+    Z: {fileID: 0}
+    X: {fileID: 0}
+    C: {fileID: 0}
+    V: {fileID: 0}
+    B: {fileID: 0}
+    N: {fileID: 0}
+    M: {fileID: 0}
+    Tab: {fileID: 0}
+    Enter: {fileID: 0}
+    LeftShift: {fileID: 0}
+    LeftControl: {fileID: 0}
+    LeftAlt: {fileID: 0}
+    Spacebar: {fileID: 0}
+    RightAlt: {fileID: 0}
+    RightControl: {fileID: 0}
+    RightShift: {fileID: 0}
+    UpArrow: {fileID: 0}
+    LeftArrow: {fileID: 0}
+    DownArrow: {fileID: 0}
+    RightArrow: {fileID: 0}
+    Escape: {fileID: 0}
+  - Name: PlayStation Controller
+    control: 0
+    buttonSouth: {fileID: 21300000, guid: 2746dc8f659bf5542b050522c67ea654, type: 3}
+    buttonNorth: {fileID: 21300000, guid: cfa2ed0c54f67714c859c41d3a3c15c5, type: 3}
+    buttonEast: {fileID: 21300000, guid: ee733160d4860c445bf310c245c5d87f, type: 3}
+    buttonWest: {fileID: 21300000, guid: a8bfde91ff2069b4daa24a4c42c2f1ad, type: 3}
+    startButton: {fileID: 21300000, guid: dcc0fc6473faa774181e1d9e9a27b6a0, type: 3}
+    selectButton: {fileID: 21300000, guid: 0964b9ce02bdedf44a89f059d12e5c0f, type: 3}
+    leftTrigger: {fileID: 21300000, guid: a3a62dcdb3f582a438e12b75e4de6beb, type: 3}
+    rightTrigger: {fileID: 21300000, guid: 42b58873cb75c4d4ca4159929e7bed45, type: 3}
+    leftShoulder: {fileID: 21300000, guid: fb4979cb34697df469f4fc968c2a2fac, type: 3}
+    rightShoulder: {fileID: 21300000, guid: 9bbed93f6c86cea469d696ccd223959b, type: 3}
+    dpad: {fileID: 21300000, guid: d63007f17d265a948a79198d668ebc24, type: 3}
+    dpadUp: {fileID: 21300000, guid: 9bea7ceb5fa11b84cb6a0c6f11ce51f8, type: 3}
+    dpadDown: {fileID: 21300000, guid: e2c3a77cc915b854ca5ec3c2828c9267, type: 3}
+    dpadLeft: {fileID: 21300000, guid: 286ae44c84eb69c45885eafdc1857f5a, type: 3}
+    dpadRight: {fileID: 21300000, guid: f197e5ad699093e43973dac0498ada5d, type: 3}
+    leftStick: {fileID: 21300000, guid: bcd565c5a7259ef42bb88de8e9719529, type: 3}
+    rightStick: {fileID: 21300000, guid: 12e057ba9f9bdac42878b7178b1319ba, type: 3}
+    leftStickPress: {fileID: 21300000, guid: 8b2835e1e936c6249be6925a217cbec5, type: 3}
+    rightStickPress: {fileID: 21300000, guid: b3b28f9bf431f5045bbaf9b260fb69e8, type: 3}
+    LeftClick: {fileID: 0}
+    MiddleClick: {fileID: 0}
+    RightClick: {fileID: 0}
+    F1: {fileID: 0}
+    F2: {fileID: 0}
+    F3: {fileID: 0}
+    F4: {fileID: 0}
+    F5: {fileID: 0}
+    F6: {fileID: 0}
+    F7: {fileID: 0}
+    F8: {fileID: 0}
+    F9: {fileID: 0}
+    F10: {fileID: 0}
+    F11: {fileID: 0}
+    F12: {fileID: 0}
+    Keyboard0: {fileID: 0}
+    Keyboard1: {fileID: 0}
+    Keyboard2: {fileID: 0}
+    Keyboard3: {fileID: 0}
+    Keyboard4: {fileID: 0}
+    Keyboard5: {fileID: 0}
+    Keyboard6: {fileID: 0}
+    Keyboard7: {fileID: 0}
+    Keyboard8: {fileID: 0}
+    Keyboard9: {fileID: 0}
+    Q: {fileID: 0}
+    W: {fileID: 0}
+    E: {fileID: 0}
+    R: {fileID: 0}
+    T: {fileID: 0}
+    Y: {fileID: 0}
+    U: {fileID: 0}
+    I: {fileID: 0}
+    O: {fileID: 0}
+    P: {fileID: 0}
+    A: {fileID: 0}
+    S: {fileID: 0}
+    D: {fileID: 0}
+    F: {fileID: 0}
+    G: {fileID: 0}
+    H: {fileID: 0}
+    J: {fileID: 0}
+    K: {fileID: 0}
+    L: {fileID: 0}
+    Z: {fileID: 0}
+    X: {fileID: 0}
+    C: {fileID: 0}
+    V: {fileID: 0}
+    B: {fileID: 0}
+    N: {fileID: 0}
+    M: {fileID: 0}
+    Tab: {fileID: 0}
+    Enter: {fileID: 0}
+    LeftShift: {fileID: 0}
+    LeftControl: {fileID: 0}
+    LeftAlt: {fileID: 0}
+    Spacebar: {fileID: 0}
+    RightAlt: {fileID: 0}
+    RightControl: {fileID: 0}
+    RightShift: {fileID: 0}
+    UpArrow: {fileID: 0}
+    LeftArrow: {fileID: 0}
+    DownArrow: {fileID: 0}
+    RightArrow: {fileID: 0}
+    Escape: {fileID: 0}
+  - Name: Keyboard
+    control: 1
+    buttonSouth: {fileID: 0}
+    buttonNorth: {fileID: 0}
+    buttonEast: {fileID: 0}
+    buttonWest: {fileID: 0}
+    startButton: {fileID: 0}
+    selectButton: {fileID: 0}
+    leftTrigger: {fileID: 0}
+    rightTrigger: {fileID: 0}
+    leftShoulder: {fileID: 0}
+    rightShoulder: {fileID: 0}
+    dpad: {fileID: 0}
+    dpadUp: {fileID: 0}
+    dpadDown: {fileID: 0}
+    dpadLeft: {fileID: 0}
+    dpadRight: {fileID: 0}
+    leftStick: {fileID: 0}
+    rightStick: {fileID: 0}
+    leftStickPress: {fileID: 0}
+    rightStickPress: {fileID: 0}
+    LeftClick: {fileID: 21300000, guid: 82f51ad017a44574faa483a571d8ddca, type: 3}
+    MiddleClick: {fileID: 21300000, guid: a60ebe49135a6674ea641d5f4880c321, type: 3}
+    RightClick: {fileID: 21300000, guid: 929fbace1cfc69748bdb2b87029b2c5a, type: 3}
+    F1: {fileID: 21300000, guid: cd98c7763a9a3de48b5bff8d9065670b, type: 3}
+    F2: {fileID: 21300000, guid: 512313f8d4405b94396f5f0e9c609417, type: 3}
+    F3: {fileID: 21300000, guid: 38c0bd95e949cee4c872b0c0e61d11e6, type: 3}
+    F4: {fileID: 21300000, guid: 44a27ee4f946a334fa69aead63666cce, type: 3}
+    F5: {fileID: 21300000, guid: 3131dae04c65ca641ae57d4fec24d307, type: 3}
+    F6: {fileID: 21300000, guid: 86e6e7ba3dabdba4497edb270b8f19b3, type: 3}
+    F7: {fileID: 21300000, guid: 7da230e42972aff41b76ab1cd0544b7a, type: 3}
+    F8: {fileID: 21300000, guid: e66db6d2087c7dc48a7103ad451f90d9, type: 3}
+    F9: {fileID: 21300000, guid: da82b31bf99b79242b4cfdfaf55d8728, type: 3}
+    F10: {fileID: 21300000, guid: 97478952988f2db429290901ca6fb5b4, type: 3}
+    F11: {fileID: 21300000, guid: ae16a6f3e01575b4a87f266a36a21391, type: 3}
+    F12: {fileID: 21300000, guid: 0cae8e84fd2f4b546aed4044373c2761, type: 3}
+    Keyboard0: {fileID: 21300000, guid: 512983afb5bd4b14787eb0d8ce01140f, type: 3}
+    Keyboard1: {fileID: 21300000, guid: e9ce68e59141d594d9a90359c7f04c23, type: 3}
+    Keyboard2: {fileID: 21300000, guid: c32f135a60aada649878367ca6d484ae, type: 3}
+    Keyboard3: {fileID: 21300000, guid: a15ea67641b5ae44fbb5816974ca8f86, type: 3}
+    Keyboard4: {fileID: 21300000, guid: 19b6b07762d66cc4982c46467d95e654, type: 3}
+    Keyboard5: {fileID: 21300000, guid: c83a2489355697d43bf92ede22dce1be, type: 3}
+    Keyboard6: {fileID: 21300000, guid: 9ca1c7446bc3b9d4e93861b695271570, type: 3}
+    Keyboard7: {fileID: 21300000, guid: 34b134fb9d1d5df498567af6c7247cf8, type: 3}
+    Keyboard8: {fileID: 21300000, guid: f3aafa694566b4143ac6b6fcef0e34a3, type: 3}
+    Keyboard9: {fileID: 21300000, guid: f50e6c1782388904bbba7c268861993b, type: 3}
+    Q: {fileID: 21300000, guid: 5ead403d706a50046a41934771f517a5, type: 3}
+    W: {fileID: 21300000, guid: ec24b84edfd35104c80ba83a0dd6feae, type: 3}
+    E: {fileID: 21300000, guid: 2db7e48706ebdaf4ea4aeb3503544834, type: 3}
+    R: {fileID: 21300000, guid: 162f5042bf9e74d4398be75b9122f7fe, type: 3}
+    T: {fileID: 21300000, guid: 1fba04efdd56b704da1c0609e82fba0d, type: 3}
+    Y: {fileID: 21300000, guid: 29689f785070b2a4b9a9820778662406, type: 3}
+    U: {fileID: 21300000, guid: a57208a1a9f5b8b4b8ae863e77118dcb, type: 3}
+    I: {fileID: 21300000, guid: 2010da5536caad64489e7363a7fe4f6f, type: 3}
+    O: {fileID: 21300000, guid: cce32ba412419b14e88ef6a65f95abb0, type: 3}
+    P: {fileID: 21300000, guid: 8098b638b6af92f4dbe053b50f22be0b, type: 3}
+    A: {fileID: 21300000, guid: b774ba932798a93439ed1d5eb52b3324, type: 3}
+    S: {fileID: 21300000, guid: 66b09ad08274fa042b6ae63fa330bbbf, type: 3}
+    D: {fileID: 21300000, guid: c730cc095b720ce4dab0915f77658a95, type: 3}
+    F: {fileID: 21300000, guid: e221f221c38be79409d69342b19112eb, type: 3}
+    G: {fileID: 21300000, guid: 739c0141bdedb96479e460e12506ab36, type: 3}
+    H: {fileID: 21300000, guid: 5504fe04e30d7dd4cad477a386fe0450, type: 3}
+    J: {fileID: 21300000, guid: 12824e7c258c7344a91b77cdd62af952, type: 3}
+    K: {fileID: 21300000, guid: 343dc1bec42940b4c9520aa44b9f9aba, type: 3}
+    L: {fileID: 21300000, guid: d9c44188308de0440ad068db8d331570, type: 3}
+    Z: {fileID: 21300000, guid: 46dc9fda7f52016419222dec031cc8cf, type: 3}
+    X: {fileID: 21300000, guid: b43f5d9d4a3125642bf8162d93cebe7a, type: 3}
+    C: {fileID: 21300000, guid: 81542941f821a9044b05dd12576c2838, type: 3}
+    V: {fileID: 21300000, guid: 6f6484c6ebd240f4d82b8c6ed47abe91, type: 3}
+    B: {fileID: 21300000, guid: 04bda76b0e207dd4a9d91aec2aeb3a8b, type: 3}
+    N: {fileID: 21300000, guid: 9523002f274d2b146b6d5b404b9d2860, type: 3}
+    M: {fileID: 21300000, guid: 79115bbaee0e8ae4da1f58d3b99b64dc, type: 3}
+    Tab: {fileID: 21300000, guid: f6b7ca69222072742bf5d93bd6018e40, type: 3}
+    Enter: {fileID: 21300000, guid: 0c7bbf3208a34a84cb5bfeabe8e9713f, type: 3}
+    LeftShift: {fileID: 21300000, guid: e070e645c6d42e640962e5f8cdc444f6, type: 3}
+    LeftControl: {fileID: 21300000, guid: 37469355967d8204db7ca2bb001aabb7, type: 3}
+    LeftAlt: {fileID: 21300000, guid: 64f58b5d462bca242b390851acb3ab11, type: 3}
+    Spacebar: {fileID: 21300000, guid: b919fd354c046c24b8d33f4abeb17220, type: 3}
+    RightAlt: {fileID: 21300000, guid: 64f58b5d462bca242b390851acb3ab11, type: 3}
+    RightControl: {fileID: 21300000, guid: 37469355967d8204db7ca2bb001aabb7, type: 3}
+    RightShift: {fileID: 21300000, guid: e57eb42d09c6f374aa7047d5668e9e35, type: 3}
+    UpArrow: {fileID: 21300000, guid: d50cbe6bf966dd9479925320beb32c27, type: 3}
+    LeftArrow: {fileID: 21300000, guid: 14186a8146474e24885d52396461a881, type: 3}
+    DownArrow: {fileID: 21300000, guid: f745977c436d120419bf5e4f4a18c16e, type: 3}
+    RightArrow: {fileID: 21300000, guid: dd9f912baa8e5834fab62210caf93b9e, type: 3}
+    Escape: {fileID: 21300000, guid: b90414f123435834d9bc42d7213e09b7, type: 3}

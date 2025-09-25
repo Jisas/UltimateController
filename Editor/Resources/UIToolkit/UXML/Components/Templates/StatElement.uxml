@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UltimateFramework/Resources/UIToolkit/USS/GeneralStyles.uss?fileID=7433441132597879392&amp;guid=2a85f9a9da24bfc43b2229166408fe36&amp;type=3#GeneralStyles" />
+    <ui:VisualElement name="StatElement" style="flex-grow: 1; background-color: rgb(56, 56, 56); margin-bottom: 3px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;">
+        <ui:VisualElement name="Base-Fields" style="flex-grow: 0; flex-direction: row; margin-bottom: 3px; justify-content: space-between;">
+            <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 47%; min-width: 47%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; margin-left: 0; flex-grow: 1; margin-right: 0;">
+                <ui:Label tabindex="-1" text="None" display-tooltip-when-elided="true" name="tag" style="align-self: flex-start; opacity: 0.8;" />
+            </ui:Button>
+            <ui:FloatField value="42,2" tooltip="Srtat max value" name="start-max-value" style="flex-grow: 1; max-width: 46%; min-width: 46%; margin-left: 0;" />
+            <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="remove-button" style="width: 15px; height: 15px; align-self: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-right: 0; margin-left: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Has-Regen-BooleanSwitch" style="margin-bottom: 3px; display: flex;">
+            <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-right: 0; margin-left: 0;">
+                <ui:Label tabindex="-1" text="Has Regeneration" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                <ui:VisualElement name="SwitchElement" class="Switch">
+                    <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="has-regeneration-switch" class="SwitchOn" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Regeneration-Fields" style="flex-grow: 0; flex-direction: row; margin-bottom: 3px; justify-content: space-between; display: flex;">
+            <ui:Label tabindex="-1" text="Value" parse-escape-sequences="true" display-tooltip-when-elided="true" name="value-label" style="-unity-font-style: italic; align-self: center; width: 35px;" />
+            <ui:FloatField value="42,2" name="value-field" style="flex-grow: 1; margin-right: 5px;" />
+            <ui:Label tabindex="-1" text="Delay" parse-escape-sequences="true" display-tooltip-when-elided="true" name="delay-label" style="align-self: center; -unity-font-style: italic; width: 35px;" />
+            <ui:FloatField value="0" name="delay-field" style="flex-grow: 1; margin-right: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Start-Zero-BooleanSwitch" style="margin-bottom: 3px; display: flex;">
+            <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-right: 0; margin-left: 0; margin-top: 0;">
+                <ui:Label tabindex="-1" text="Start From Zero" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                <ui:VisualElement name="SwitchElement" class="Switch">
+                    <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="start-from-zero-switch" class="SwitchOn" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

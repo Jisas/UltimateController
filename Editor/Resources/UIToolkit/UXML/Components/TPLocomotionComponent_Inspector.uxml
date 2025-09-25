@@ -1,0 +1,204 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Packages/UltimateFramework/Resources/UIToolkit/USS/TPLocomotionComponentStyles.uss?fileID=7433441132597879392&amp;guid=38f8eeff75e8d84439b7cd831696a22d&amp;type=3#TPLocomotionComponentStyles" />
+    <ui:VisualElement name="root" style="flex-grow: 1;">
+        <ui:VisualElement name="Header">
+            <ui:VisualElement name="header" style="flex-grow: 0; max-height: none; min-height: auto; background-color: rgb(31, 31, 31); margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; min-width: auto; height: 70px;">
+                <ui:VisualElement name="content" style="flex-grow: 1; flex-direction: row; justify-content: center; overflow: hidden; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; align-self: auto; align-items: stretch;">
+                    <ui:VisualElement name="icon" style="flex-grow: 0; width: 35px; height: 35px; align-self: center; background-image: resource(&apos;Img/Locomotion_Component_Icon&apos;); margin-right: 10px; -unity-background-scale-mode: scale-to-fit; max-width: 35px; max-height: 35px; min-width: 35px; min-height: 35px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                    <ui:VisualElement style="justify-content: space-between; height: 35px; align-self: center; align-items: stretch; overflow: hidden;">
+                        <ui:Label tabindex="-1" text="Locomotion" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-center; -unity-font-style: bold; margin-left: 0; font-size: 20px; color: rgb(255, 255, 255); padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; text-overflow: ellipsis; margin-top: 0; margin-right: 0; margin-bottom: 0;" />
+                        <ui:Label tabindex="-1" text="(Third Person Component)" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; font-size: 8px; -unity-font-style: normal; text-overflow: ellipsis; letter-spacing: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" style="flex-grow: 0; padding-top: 0; padding-right: 5px; padding-bottom: 0; padding-left: 5px; display: flex;">
+            <ui:VisualElement name="Buttons-Header" style="flex-grow: 0; flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-self: auto; align-items: stretch;">
+                <uie:ToolbarButton text="Start Config" parse-escape-sequences="true" display-tooltip-when-elided="true" name="start-config-button" class="Tab Tab-Hover" />
+                <uie:ToolbarButton text="Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-button" class="Tab Tab-Hover" />
+                <uie:ToolbarButton text="Foot IK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="foot-ik-button" class="Tab Tab-Hover" style="margin-right: 0;" />
+                <uie:ToolbarButton text="Body Inclination" parse-escape-sequences="true" display-tooltip-when-elided="true" name="body-inclination-button" class="Tab Tab-Hover" />
+                <uie:ToolbarButton text="Head Tracking" parse-escape-sequences="true" display-tooltip-when-elided="true" name="head-tracking-button" class="Tab Tab-Hover" />
+                <uie:ToolbarButton text="SFX" parse-escape-sequences="true" display-tooltip-when-elided="true" name="sfx-button" class="Tab Tab-Hover" style="margin-right: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content-Container" style="flex-grow: 0; background-color: rgb(48, 48, 48); margin-top: 5px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-bottom: 5px; display: none;">
+                <ui:VisualElement name="star-config-body" style="flex-grow: 0; display: none;">
+                    <ui:EnumField type="UltimateFramework.Utils.LocomotionType, UltimateFramework" label="Locomotion Type" name="locomotion-type" style="margin-left: 0; flex-grow: 1; margin-right: 0; margin-bottom: 3px; -unity-font-style: normal;" />
+                    <ui:EnumField type="UltimateFramework.Utils.LocomotionMode, UltimateFramework" label="Locomotion Mode" name="locomotion-mode" style="margin-right: 0; margin-left: 0; flex-grow: 1; margin-bottom: 3px;" />
+                    <ui:TextField picking-mode="Ignore" label="Locomotion Map" name="locomotion-map" style="flex-grow: 1; margin-left: 0; margin-bottom: 3px; margin-right: 0;" />
+                    <ui:TextField picking-mode="Ignore" label="Override Layer" name="override-layer" style="flex-grow: 1; margin-left: 0; margin-bottom: 3px; margin-right: 0;" />
+                    <ui:FloatField label="Idle Break Waitng" value="0" name="idle-break-wait-time" style="margin-left: 0; margin-right: 0; margin-bottom: 0;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="settings-body" style="flex-grow: 0; display: none;">
+                    <ui:VisualElement name="general-settings" style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; margin-bottom: 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-width: 0.5px; display: flex;">
+                        <ui:VisualElement name="section-header" style="flex-grow: 0; margin-top: 10px; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="General Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:VisualElement name="can-jump">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-bottom: 3px;">
+                                    <ui:Label tabindex="-1" text="Enable Jump" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="can-jump-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="can-crouch">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-bottom: 3px;">
+                                    <ui:Label tabindex="-1" text="Enable Crouch" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="can-crouch-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="animator-settings" style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; margin-bottom: 10px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-width: 0.5px;">
+                        <ui:VisualElement name="section-header" style="flex-grow: 0; margin-top: 10px; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="Animator Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-center;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:VisualElement name="root-motion-on-move">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-bottom: 3px;">
+                                    <ui:Label tabindex="-1" text="Use Root Motion On Move" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="root-motion-on-move-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="root-motion-on-sprint">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-bottom: 3px;">
+                                    <ui:Label tabindex="-1" text="Use Root Motion On Sprint" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="root-motion-on-sprint-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="root-motion-on-jump">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; justify-content: space-between; margin-bottom: 3px;">
+                                    <ui:Label tabindex="-1" text="Use Root Motion On Jump" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="root-motion-on-jump-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="grounding-settings" style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+                        <ui:VisualElement name="section-header" style="flex-grow: 0; margin-top: 10px; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="Ground Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-center; margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:FloatField label="Ground Offset" value="0" name="ground-offset" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:FloatField label="Grounded Radius" value="0" name="ground-radius" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <uie:LayerMaskField label="Ground Layers" name="ground-layers" style="margin-right: 0; margin-left: 0; margin-bottom: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="foot-ik-body" style="flex-grow: 0; display: none;">
+                    <ui:VisualElement name="enable-setting" style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-width: 0.5px;">
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:VisualElement name="enable-foot-ik" style="margin-bottom: 3px;">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; justify-content: space-between;">
+                                    <ui:Label tabindex="-1" text="Enable Foot IK" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="foot-ik-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                            <ui:VisualElement name="show-solver-debug">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; justify-content: space-between;">
+                                    <ui:Label tabindex="-1" text="Show Solver Debug" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="show-solver-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="foot-ik-settings" style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; display: none; margin-top: 10px;">
+                        <ui:VisualElement name="section-header" style="flex-grow: 0; margin-top: 10px; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="Foot IK Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-center; margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:Slider picking-mode="Ignore" label="Ray Ground Height" value="0" high-value="2" show-input-field="true" name="ray-ground-height" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:Slider picking-mode="Ignore" label="Ray Down Distance" value="0" high-value="2" show-input-field="true" name="ray-down-distance" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:Slider picking-mode="Ignore" label="Pelvis Repos Speed" value="0" high-value="2" show-input-field="true" name="pelvis-repos-speed" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:Slider picking-mode="Ignore" label="Feet IK Pos Speed" value="0" high-value="2" show-input-field="true" name="feet-ik-pos-speed" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:Slider picking-mode="Ignore" label="Pelvis Offset" value="0" high-value="10" show-input-field="true" name="pelvis-offset" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:TextField picking-mode="Ignore" label="LF Anim Variable" name="left-foot-anim-variable" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:TextField picking-mode="Ignore" label="RF Anim Variable" name="right-foot-anim-variable" style="margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="body-inclination-body" style="flex-grow: 0; display: none;">
+                    <ui:VisualElement name="enable-setting" style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-width: 0.5px;">
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:VisualElement name="enable-body-inclination">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; justify-content: space-between;">
+                                    <ui:Label tabindex="-1" text="Enable Body Inclination" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="body-inclination-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="body-inclination-settings" style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; display: none; margin-top: 10px;">
+                        <ui:VisualElement name="section-header" style="flex-grow: 0; margin-top: 10px; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="Body Inclination Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-center; margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:Slider picking-mode="Ignore" label="Min Incline Angle" value="0" high-value="45" show-input-field="true" name="min-incline-angle" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:Slider picking-mode="Ignore" label="Incline Speed" value="0" high-value="1" show-input-field="true" name="incline-speed" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:Slider picking-mode="Ignore" label="Sensor Offest Y" value="0" high-value="1" show-input-field="true" name="sensor-offset-y" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:MinMaxSlider picking-mode="Ignore" label="Body Inclination" min-value="0" max-value="0" low-limit="-20" high-limit="20" name="min-max-body-inclination" style="margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="head-tracking-body" style="flex-grow: 0; display: none;">
+                    <ui:VisualElement name="enable-setting" style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-width: 0.5px;">
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:VisualElement name="enable-head-tracking">
+                                <ui:VisualElement name="BooleanSwitch" style="flex-grow: 1; max-height: 25px; min-height: 25px; flex-direction: row; justify-content: space-between;">
+                                    <ui:Label tabindex="-1" text="Enable Head Tracking" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; align-self: center; -unity-font-style: italic;" />
+                                    <ui:VisualElement name="SwitchElement" class="Switch">
+                                        <ui:Button text="On" parse-escape-sequences="true" display-tooltip-when-elided="true" name="head-tracking-button" class="SwitchOn" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="head-track-settings" style="flex-grow: 1; padding-top: 0; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; border-left-color: rgb(135, 135, 135); border-right-color: rgb(135, 135, 135); border-top-color: rgb(135, 135, 135); border-bottom-color: rgb(135, 135, 135); border-right-width: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-top-width: 0.5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; display: none; margin-top: 10px;">
+                        <ui:VisualElement name="section-header" style="flex-grow: 0; margin-top: 10px; margin-bottom: 10px;">
+                            <ui:Label tabindex="-1" text="Head Track Settings" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 13px; -unity-text-align: middle-center; margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="setcion-body" style="flex-grow: 1;">
+                            <ui:Vector2Field label="Look Target Offset" name="look-target-offset" style="margin-right: 0; margin-bottom: 3px; margin-left: 0;" />
+                            <ui:FloatField label="Look Distance" value="42,2" name="look-distance" style="margin-right: 0; margin-bottom: 3px; margin-left: 0;" />
+                            <ui:Slider picking-mode="Ignore" label="Smooth Speed" value="0" high-value="1" show-input-field="true" name="smooth-speed" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                            <ui:MinMaxSlider picking-mode="Ignore" label="Horizontal Limit" min-value="0" max-value="0" low-limit="-180" high-limit="180" name="horizontal-angle-limit" style="margin-right: 0; margin-left: 0;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="sfx-body" style="flex-grow: 0; display: none;">
+                    <ui:Slider picking-mode="Ignore" label="Fosteps Volume" value="0" high-value="100" name="footstep-audio-volume" show-input-field="true" style="margin-right: 0; margin-left: 0; margin-bottom: 3px;" />
+                    <uie:ObjectField label="Landing Audio" name="landing-audio-clip" type="UnityEngine.AudioClip, UnityEngine.AudioModule" allow-scene-objects="true" style="margin-right: 0; margin-left: 0; margin-bottom: 5px;" />
+                    <ui:VisualElement name="audio-list" style="flex-grow: 1;">
+                        <ui:VisualElement name="List-Header" focusable="false" style="flex-grow: 0; height: 25px; padding-top: 3px; padding-right: 12px; padding-bottom: 3px; padding-left: 5px; background-color: rgb(43, 43, 43); flex-direction: row; overflow: hidden;">
+                            <ui:VisualElement name="list-opener" focusable="true" style="flex-grow: 1; flex-direction: row;">
+                                <ui:VisualElement name="arrow" style="flex-grow: 0; width: 25px; height: 25px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-direction: column; align-self: center;">
+                                    <ui:VisualElement style="background-image: resource(&apos;Img/arrow&apos;); rotate: 180deg; flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+                                </ui:VisualElement>
+                                <ui:Label tabindex="-1" text="Foostep Clips" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-left; font-size: 12px;" />
+                                <ui:Label tabindex="-1" text="0 elements" parse-escape-sequences="true" display-tooltip-when-elided="true" name="count" style="-unity-text-align: middle-left; font-size: 10px; margin-left: 5px; padding-left: 5px; border-left-color: rgb(70, 70, 70); border-right-color: rgb(70, 70, 70); border-top-color: rgb(70, 70, 70); border-bottom-color: rgb(70, 70, 70); border-left-width: 1px; color: rgb(154, 154, 154);" />
+                            </ui:VisualElement>
+                            <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-audio-clip" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(88, 88, 88); -unity-background-image-tint-color: rgba(0, 0, 0, 0); width: 15px; height: 15px; align-self: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 3px; left: 2px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="List-Body" style="flex-grow: 1; background-color: rgb(31, 31, 31); overflow: hidden; display: none; padding-bottom: 5px; padding-top: 5px; padding-right: 5px; padding-left: 5px; visibility: visible;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

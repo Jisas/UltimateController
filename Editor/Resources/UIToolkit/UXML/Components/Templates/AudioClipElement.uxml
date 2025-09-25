@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="AudioClipElement" style="flex-grow: 1; flex-direction: row;">
+        <uie:ObjectField name="audio-clip" type="UnityEngine.AudioClip, UnityEngine.AudioModule" style="flex-grow: 1;" />
+        <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="remove-button" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 5px; margin-bottom: 0; margin-left: 5px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 15px; height: 15px; align-self: center;" />
+    </ui:VisualElement>
+</ui:UXML>

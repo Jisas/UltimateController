@@ -1,0 +1,314 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e9eb6de8fc7e44bb756104b2e79eaf, type: 3}
+  m_Name: ItemsDatabase
+  m_EditorClassIdentifier: 
+  items:
+  - name: UFTwinblades
+    index: 0
+    icon: {fileID: 21300000, guid: 9a16587124552a84a9eb2c5014803239, type: 3}
+    prefab: {fileID: 7503215844502913763, guid: 76dcc52bebb5cb54f9db64d6f58a0f60,
+      type: 3}
+    type: 6
+    combatType: 0
+    hand: 0
+    mainHand: 0
+    weight: 0
+    damageType: DamageType.Slash
+    itemSlot: ItemSlot.MeleeWeapon
+    bodySlot: TwinBlade_Equip_Socket
+    handSlot: TwinBlade_Hand_Socket
+    actionsTag: Moveset.TwinBlades
+    movesetTag: Moveset.TwinBlades
+    description: Twinblades radiating energy of the universe.
+    notes: 
+    canBeSell: 1
+    canBeUpgrade: 1
+    canBeDiscarted: 1
+    IsStackable: 0
+    stats:
+    - statTag: ItemStat.Damage
+      startValue: 120
+    scaled:
+    - startScale: 2
+      attributeTag: PrimaryAttribute.Dexterity
+      operation: {fileID: 11400000, guid: e692ec5b3dad2d541884685dcb953cb5, type: 2}
+    upgrades: []
+    requirements: []
+    statsModifiers:
+    - statType: 
+      startValue: 0
+      opType: 0
+      valueType: 0
+      valueTo: 0
+      baseOn: 0
+    attributeModifiers: []
+  - name: UFHeavyHammer
+    index: 1
+    icon: {fileID: 21300000, guid: 41620f94dc107fe4a8fdc1e1086f8532, type: 3}
+    prefab: {fileID: 8914219773539631201, guid: afbc32da6217a684c8245a4dfbda884e,
+      type: 3}
+    type: 6
+    combatType: 0
+    hand: 1
+    mainHand: 2
+    weight: 0
+    damageType: DamageType.HugeImpact
+    itemSlot: ItemSlot.MeleeWeapon
+    bodySlot: HeavyHammer_Equip, HeavyHammer_Equip
+    handSlot: HeavyHammer_Hand_Socket
+    actionsTag: Moveset.TwoHandHammer
+    movesetTag: Moveset.TwoHandHammer
+    description: 
+    notes: 
+    canBeSell: 0
+    canBeUpgrade: 1
+    canBeDiscarted: 0
+    IsStackable: 0
+    stats:
+    - statTag: ItemStat.Damage
+      startValue: 210
+    scaled:
+    - startScale: 2
+      attributeTag: PrimaryAttribute.Strenght
+      operation: {fileID: 11400000, guid: e692ec5b3dad2d541884685dcb953cb5, type: 2}
+    upgrades: []
+    requirements:
+    - requirementFor: 1
+      upgradeName: 
+      itemName: 
+      itemAmmount: 0
+      attributeTag: PrimaryAttribute.Strenght
+      value: 20
+    statsModifiers: []
+    attributeModifiers: []
+  - name: UFAxe
+    index: 2
+    icon: {fileID: 21300000, guid: 467996881e011ec45a490d0228dec0f9, type: 3}
+    prefab: {fileID: 7475097498006731804, guid: 6d6a18b43f8d6dd4dacd4beb46a0150c,
+      type: 3}
+    type: 6
+    combatType: 0
+    hand: 0
+    mainHand: 0
+    weight: 0
+    damageType: DamageType.Cut
+    itemSlot: ItemSlot.MeleeWeapon
+    bodySlot: Axe_Equip_Socket_RH, Axe_Equip_Socket_LH
+    handSlot: Axe_Hand_Socket
+    actionsTag: Moveset.OneHandAxe
+    movesetTag: Moveset.OneHandAxe
+    description: 
+    notes: 
+    canBeSell: 1
+    canBeUpgrade: 1
+    canBeDiscarted: 1
+    IsStackable: 0
+    stats:
+    - statTag: ItemStat.Damage
+      startValue: 80
+    scaled:
+    - startScale: 3
+      attributeTag: PrimaryAttribute.Strenght
+      operation: {fileID: 11400000, guid: e692ec5b3dad2d541884685dcb953cb5, type: 2}
+    upgrades: []
+    requirements:
+    - requirementFor: 1
+      upgradeName: 
+      itemName: 
+      itemAmmount: 0
+      attributeTag: PrimaryAttribute.Strenght
+      value: 5
+    statsModifiers: []
+    attributeModifiers: []
+  - name: UFShield
+    index: 3
+    icon: {fileID: 21300000, guid: 4f475d017bee16845b5acc7aa6c54eef, type: 3}
+    prefab: {fileID: 5647634718484145100, guid: 6c597e4964388fe4a81e8a37e4eddd64,
+      type: 3}
+    type: 6
+    combatType: 0
+    hand: 2
+    mainHand: 0
+    weight: 0
+    damageType: None
+    itemSlot: ItemSlot.LeftHandWeapon
+    bodySlot: Shield_Equip_Socket,Shield_Equip_Socket
+    handSlot: Shield_Hand_Socket
+    actionsTag: Moveset.ShieldAndWeapon
+    movesetTag: None
+    description: 
+    notes: 
+    canBeSell: 1
+    canBeUpgrade: 0
+    canBeDiscarted: 1
+    IsStackable: 0
+    stats:
+    - statTag: ItemStat.PhysicDefence
+      startValue: 10
+    - statTag: ItemStat.MagicDefence
+      startValue: 3
+    scaled:
+    - startScale: 3
+      attributeTag: PrimaryAttribute.Vigor
+      operation: {fileID: 11400000, guid: e692ec5b3dad2d541884685dcb953cb5, type: 2}
+    upgrades: []
+    requirements:
+    - requirementFor: 1
+      upgradeName: 
+      itemName: 
+      itemAmmount: 0
+      attributeTag: PrimaryAttribute.Strenght
+      value: 5
+    statsModifiers: []
+    attributeModifiers:
+    - attributeType: Attribute.StaminaRegen
+      startValue: 10
+      opType: 0
+      valueType: 0
+  - name: UFKatana
+    index: 4
+    icon: {fileID: 21300000, guid: 9093372f200d19f4a96a57b9c81657e2, type: 3}
+    prefab: {fileID: 2679796393194771105, guid: ea2afe1be6e19134eba4476c21fee79b,
+      type: 3}
+    type: 6
+    combatType: 0
+    hand: 0
+    mainHand: 0
+    weight: 0
+    damageType: DamageType.Slash
+    itemSlot: ItemSlot.MeleeWeapon
+    bodySlot: Katana_Equip_Socket_RH,  Katana_Equip_Socket_LH
+    handSlot: Katana_Hand_Socket
+    actionsTag: Moveset.DualSword
+    movesetTag: Moveset.DualSword
+    description: 
+    notes: 
+    canBeSell: 1
+    canBeUpgrade: 1
+    canBeDiscarted: 1
+    IsStackable: 0
+    stats:
+    - statTag: ItemStat.Damage
+      startValue: 80
+    scaled:
+    - startScale: 2
+      attributeTag: PrimaryAttribute.Dexterity
+      operation: {fileID: 11400000, guid: e692ec5b3dad2d541884685dcb953cb5, type: 2}
+    upgrades:
+    - name: +1
+      index: 0
+      useStatUpgrade: 1
+      statTag: ItemStat.Damage
+      value: 20
+      opType: 0
+      valueType: 0
+      baseOn: 2
+      useScaleUpgrade: 0
+      scaleToAffectIndex: 0
+      newScaleLevel: 1
+      useAttModUpgrade: 0
+      attModToAffectIndex: 0
+      attModNewValue: 0
+      useStatModUpgrade: 0
+      statToAffectIndex: 0
+      statModNewValue: 0
+    - name: +2
+      index: 1
+      useStatUpgrade: 1
+      statTag: ItemStat.Damage
+      value: 60
+      opType: 0
+      valueType: 0
+      baseOn: 2
+      useScaleUpgrade: 1
+      scaleToAffectIndex: 0
+      newScaleLevel: 1
+      useAttModUpgrade: 0
+      attModToAffectIndex: 0
+      attModNewValue: 0
+      useStatModUpgrade: 0
+      statToAffectIndex: 0
+      statModNewValue: 0
+    requirements:
+    - requirementFor: 1
+      upgradeName: 
+      itemName: 
+      itemAmmount: 0
+      attributeTag: PrimaryAttribute.Dexterity
+      value: 10
+    statsModifiers: []
+    attributeModifiers: []
+  - name: Health Potion
+    index: 5
+    icon: {fileID: 21300000, guid: 84a3a0d918a0911469b5ee65ae0b1b12, type: 3}
+    prefab: {fileID: 0}
+    type: 7
+    combatType: 0
+    hand: 0
+    mainHand: 0
+    weight: 0
+    damageType: 
+    itemSlot: ItemSlot.Consumable
+    bodySlot: None
+    handSlot: None
+    actionsTag: 
+    movesetTag: 
+    description: "Healing potion created with leaves and sap of the tree of life.\r"
+    notes: 
+    canBeSell: 0
+    canBeUpgrade: 1
+    canBeDiscarted: 0
+    IsStackable: 0
+    stats: []
+    scaled: []
+    upgrades: []
+    requirements: []
+    statsModifiers:
+    - statType: Stats.Health
+      startValue: 200
+      opType: 0
+      valueType: 0
+      valueTo: 1
+      baseOn: 0
+    attributeModifiers: []
+  - name: UFReverseSword
+    index: 6
+    icon: {fileID: 21300000, guid: f4d4b722a28542941bc5aad2b4ec0e3a, type: 3}
+    prefab: {fileID: 7784793905305996312, guid: e04b5219e8732a9439ba128f7a05468d,
+      type: 3}
+    type: 6
+    combatType: 0
+    hand: 0
+    mainHand: 1
+    weight: 0
+    damageType: DamageType.Slash
+    itemSlot: ItemSlot.MeleeWeapon
+    bodySlot: Sword_Equip_Socket_RH, Sword_Equip_Socket_LH
+    handSlot: Sword_Hand_Socket
+    actionsTag: Moveset.ReverseDualSword
+    movesetTag: Moveset.ReverseDualSword
+    description: 
+    notes: 
+    canBeSell: 1
+    canBeUpgrade: 1
+    canBeDiscarted: 1
+    IsStackable: 0
+    stats:
+    - statTag: ItemStat.Damage
+      startValue: 80
+    scaled: []
+    upgrades: []
+    requirements: []
+    statsModifiers: []
+    attributeModifiers: []
+  armatureSets: []

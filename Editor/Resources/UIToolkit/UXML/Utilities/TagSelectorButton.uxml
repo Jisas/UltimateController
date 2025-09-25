@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 45%; min-width: 45%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center;">
+        <ui:Label tabindex="-1" text="Stat or Attribute" display-tooltip-when-elided="true" name="stat-tag" style="align-self: flex-start; opacity: 0.8;" />
+    </ui:Button>
+</ui:UXML>

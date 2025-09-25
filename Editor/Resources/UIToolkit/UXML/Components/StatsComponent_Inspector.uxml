@@ -1,0 +1,57 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UltimateFramework/Resources/UIToolkit/USS/GeneralStyles.uss?fileID=7433441132597879392&amp;guid=2a85f9a9da24bfc43b2229166408fe36&amp;type=3#GeneralStyles" />
+    <ui:VisualElement name="root" style="flex-grow: 1;">
+        <ui:VisualElement name="Header">
+            <ui:VisualElement name="header" style="flex-grow: 0; max-height: none; min-height: auto; background-color: rgb(31, 31, 31); margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; min-width: auto; height: 70px;">
+                <ui:VisualElement name="content" style="flex-grow: 1; flex-direction: row; justify-content: center; overflow: hidden; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; align-self: auto; align-items: stretch;">
+                    <ui:VisualElement name="icon" style="flex-grow: 0; width: 35px; height: 35px; align-self: center; background-image: resource(&apos;Img/Statistics_Component_Icon&apos;); margin-right: 10px; -unity-background-scale-mode: scale-to-fit; max-width: 35px; max-height: 35px; min-width: 35px; min-height: 35px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                    <ui:VisualElement style="justify-content: space-between; height: 35px; align-self: center; align-items: stretch; overflow: hidden;">
+                        <ui:Label tabindex="-1" text="Stats &amp; Attributes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-center; -unity-font-style: bold; margin-left: 0; font-size: 20px; color: rgb(255, 255, 255); padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; text-overflow: ellipsis; margin-top: 0; margin-right: 0; margin-bottom: 0;" />
+                        <ui:Label tabindex="-1" text="(Multi-Functional Component)" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; font-size: 8px; -unity-font-style: normal; text-overflow: ellipsis; letter-spacing: 8px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" style="flex-grow: 1; padding-right: 2px; padding-bottom: 5px; padding-left: 5px;">
+            <ui:VisualElement name="Primary-Attributes-List" style="flex-grow: 0; margin-bottom: 5px;">
+                <ui:VisualElement name="List-Header" style="flex-grow: 0; height: 25px; padding-top: 3px; padding-right: 12px; padding-bottom: 3px; padding-left: 5px; background-color: rgb(43, 43, 43); flex-direction: row; overflow: hidden;">
+                    <ui:VisualElement name="list-opener" focusable="true" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="arrow" style="flex-grow: 0; width: 25px; height: 25px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-direction: column; align-self: center;">
+                            <ui:VisualElement name="icon" style="background-image: resource(&apos;Img/arrow&apos;); rotate: 180deg; flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="Primary Attributes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-left; font-size: 12px;" />
+                        <ui:Label tabindex="-1" text="0 elements" parse-escape-sequences="true" display-tooltip-when-elided="true" name="count" style="-unity-text-align: middle-left; font-size: 10px; margin-left: 5px; padding-left: 5px; border-left-color: rgb(70, 70, 70); border-right-color: rgb(70, 70, 70); border-top-color: rgb(70, 70, 70); border-bottom-color: rgb(70, 70, 70); border-left-width: 1px; color: rgb(154, 154, 154);" />
+                    </ui:VisualElement>
+                    <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-primary-att" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(88, 88, 88); -unity-background-image-tint-color: rgba(0, 0, 0, 0); width: 15px; height: 15px; align-self: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 3px; left: 2px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="List-Body" style="flex-grow: 1; background-color: rgb(31, 31, 31); overflow: hidden; display: none; padding-bottom: 2px; padding-top: 5px; padding-right: 5px; padding-left: 5px; visibility: visible;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Other-Attributes-List" style="flex-grow: 0; margin-bottom: 5px;">
+                <ui:VisualElement name="List-Header" style="flex-grow: 0; height: 25px; padding-top: 3px; padding-right: 12px; padding-bottom: 3px; padding-left: 5px; background-color: rgb(43, 43, 43); flex-direction: row; overflow: hidden;">
+                    <ui:VisualElement name="list-opener" focusable="true" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="arrow" style="flex-grow: 0; width: 25px; height: 25px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-direction: column; align-self: center;">
+                            <ui:VisualElement name="icon" style="background-image: resource(&apos;Img/arrow&apos;); rotate: 180deg; flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="Other Attributes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-left; font-size: 12px;" />
+                        <ui:Label tabindex="-1" text="0 elements" parse-escape-sequences="true" display-tooltip-when-elided="true" name="count" style="-unity-text-align: middle-left; font-size: 10px; margin-left: 5px; padding-left: 5px; border-left-color: rgb(70, 70, 70); border-right-color: rgb(70, 70, 70); border-top-color: rgb(70, 70, 70); border-bottom-color: rgb(70, 70, 70); border-left-width: 1px; color: rgb(154, 154, 154);" />
+                    </ui:VisualElement>
+                    <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-other-att" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(88, 88, 88); -unity-background-image-tint-color: rgba(0, 0, 0, 0); width: 15px; height: 15px; align-self: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 3px; left: 2px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="List-Body" style="flex-grow: 1; background-color: rgb(31, 31, 31); overflow: hidden; display: none; padding-bottom: 2px; padding-top: 5px; padding-right: 5px; padding-left: 5px; visibility: visible;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Stats-List" style="flex-grow: 0; margin-bottom: 0; margin-top: 0; margin-right: 0; margin-left: 0;">
+                <ui:VisualElement name="List-Header" style="flex-grow: 0; height: 25px; padding-top: 3px; padding-right: 12px; padding-bottom: 3px; padding-left: 5px; background-color: rgb(43, 43, 43); flex-direction: row; overflow: hidden;">
+                    <ui:VisualElement name="list-opener" focusable="true" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="arrow" style="flex-grow: 0; width: 25px; height: 25px; padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px; flex-direction: column; align-self: center;">
+                            <ui:VisualElement name="icon" style="background-image: resource(&apos;Img/arrow&apos;); rotate: 180deg; flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="Stats" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-left; font-size: 12px;" />
+                        <ui:Label tabindex="-1" text="0 elements" parse-escape-sequences="true" display-tooltip-when-elided="true" name="count" style="-unity-text-align: middle-left; font-size: 10px; margin-left: 5px; padding-left: 5px; border-left-color: rgb(70, 70, 70); border-right-color: rgb(70, 70, 70); border-top-color: rgb(70, 70, 70); border-bottom-color: rgb(70, 70, 70); border-left-width: 1px; color: rgb(154, 154, 154);" />
+                    </ui:VisualElement>
+                    <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-stat" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(88, 88, 88); -unity-background-image-tint-color: rgba(0, 0, 0, 0); width: 15px; height: 15px; align-self: center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 3px; left: 2px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="List-Body" style="flex-grow: 1; background-color: rgb(31, 31, 31); overflow: hidden; display: none; padding-bottom: 2px; padding-top: 5px; padding-right: 5px; padding-left: 5px; visibility: visible;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="generals-structure" style="display: flex; overflow: hidden;">
+        <ui:VisualElement name="generals-info-panel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); visibility: visible; flex-direction: row; align-self: auto; display: flex;">
+            <ui:VisualElement style="background-color: rgba(0, 0, 0, 0); width: 50%; height: auto; min-height: auto; max-width: 50%; min-width: 50%; flex-grow: 1;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 5px; padding-right: 2.5px; padding-top: 5px; padding-bottom: 5px; justify-content: flex-start;">
+                    <ui:VisualElement name="global-pose-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 80px; min-height: 80px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 0;">
+                        <ui:VisualElement name="global-pose-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                            <ui:Label tabindex="-1" text="Global Pose" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="global-pose-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">
+                            <uie:ObjectField label="Motion" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="global-pose-motion-field" />
+                            <ui:TextField picking-mode="Ignore" label="Layer Mask" value="mask name" name="global-pose-layer-mask-field" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 50%; max-width: 50%; min-width: 50%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;">
+                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 2.5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                    <ui:VisualElement name="general-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); height: auto; max-height: 80px; min-height: 80px; border-left-width: 1.3px; border-right-width: 1.3px; border-top-width: 1.3px; border-bottom-width: 1.3px; border-left-color: rgb(36, 36, 36); border-right-color: rgb(36, 36, 36); border-top-color: rgb(36, 36, 36); border-bottom-color: rgb(36, 36, 36); border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; overflow: hidden; margin-top: 0;">
+                        <ui:VisualElement name="general-headder" style="flex-grow: 1; background-color: rgb(77, 77, 77); height: 20px; max-height: 20px; min-height: 20px; align-self: auto; justify-content: center;">
+                            <ui:Label tabindex="-1" text="General" display-tooltip-when-elided="true" style="align-self: auto; align-items: auto; margin-left: 5px; flex-wrap: nowrap; justify-content: flex-start; width: auto; height: auto;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="general-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-self: stretch; justify-content: space-around; margin-right: 5px; margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">
+                            <uie:ObjectField label="Idle Motion" type="UnityEngine.AnimationClip, UnityEngine.AnimationModule" name="idle-motion-field" />
+                            <ui:TextField picking-mode="Ignore" label="Layer Mask" value="mask name" name="general-layer-mask-field" tooltip="All animations of this OverrideLayer will be played on this mask" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

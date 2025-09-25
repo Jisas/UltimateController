@@ -1,0 +1,28 @@
+{
+  "name": "com.jisas.ultimatecontroller",
+  "displayName": "Ultimate Controller",
+  "version": "1.0.0",
+  "unity": "2022.0",
+  "description": "Controlador de personaje y manejo de item e inventario.",
+  "keywords": [
+    "ultimate",
+    "controller",
+    "character controller",
+    "inventory",
+    "unity",
+    "editor",
+    "toolkit"
+  ],
+  "author": {
+    "name": "Jisas",
+    "email": "jesuscarrerodev@gmail.com",
+    "url": ""
+  },
+  "samples": [
+    {
+      "displayName": "Third person controller sample",
+      "description": "Ejemplo de como configurar el controlador de 3ra persona e inventario",
+      "path": "Samples~/3er Person Controller"
+    }
+  ]
+}

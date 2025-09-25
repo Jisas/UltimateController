@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="scaled-element-container" style="flex-grow: 1; flex-direction: row; min-height: 45px; align-items: stretch; max-height: 45px; margin-bottom: 3px; overflow: hidden; margin-top: 3px;">
+        <ui:VisualElement name="right-side" style="flex-grow: 1; min-width: 90%; flex-direction: column; align-self: stretch; justify-content: space-around; max-width: none;">
+            <ui:VisualElement name="right-up" style="flex-grow: 1; justify-content: space-between; flex-direction: row; margin-right: 8px; margin-left: 8px; overflow: hidden;">
+                <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 63%; min-width: 63%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; padding-right: 6px; margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; max-height: 17px; min-height: 17px;">
+                    <ui:Label tabindex="-1" text="Stat or Attribute" display-tooltip-when-elided="true" name="stat-tag" style="align-self: flex-start; opacity: 0.8; align-items: stretch; -unity-text-align: middle-left; justify-content: space-around; white-space: nowrap; text-overflow: ellipsis; width: auto; height: 100%;" />
+                </ui:Button>
+                <ui:EnumField type="UltimateFramework.Utils.ScalingLevel, UltimateFramework" name="scaling-level-enum" style="min-width: 27%; margin-right: 0; margin-left: 5px; max-width: 27%;" />
+                <ui:Button text="-" display-tooltip-when-elided="true" name="remove-scale-button" style="padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; max-width: 20px; min-width: 20px; max-height: 15px; min-height: 15px; align-self: center; width: auto; align-items: auto; justify-content: flex-start; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="right-down" style="flex-grow: 1; margin-right: 5px; margin-left: 5px;">
+                <uie:ObjectField type="ScaleMathOperation, UltimateFramework" name="scale-math-op-object" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

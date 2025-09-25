@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="debug-element" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+        <ui:Label tabindex="-1" text="Strenght:" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+    </ui:VisualElement>
+</ui:UXML>

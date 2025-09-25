@@ -1,0 +1,1445 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a70defb0570959418b67380c391d84e, type: 3}
+  m_Name: LocomotionMasterMap
+  m_EditorClassIdentifier: 
+  locomotionMaps:
+  - name: Unarmed
+    useEightDirectional: 1
+    useOverrideAtStartup: 0
+    general:
+      idle: {fileID: 7400000, guid: 56037abd70707e147be7553989974d27, type: 2}
+      crouch:
+        crouchEntry: {fileID: 7400000, guid: 8e5b07b27beb56442a7d5a9ca303687a, type: 2}
+        crouchExit: {fileID: 7400000, guid: 2d88210bb1782ef429c07c1b1d6e427f, type: 2}
+      movementConfig:
+        walkSpeed: 8
+        jogSpeed: 11
+        rotationSmoothTime: 0.12
+        speedChangeRate: 20
+      idleBreaks:
+      - {fileID: 7400000, guid: bccc9e1cd3f80d84db603155ed5483de, type: 2}
+      - {fileID: 7400000, guid: bfa65111c64461746866e3cac32a1703, type: 2}
+    movement:
+      walk:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: 07c74a97f304c4e4abef5df0d85e4d89, type: 2}
+          backward: {fileID: 7400000, guid: 3cb356be383f6164a970a07cab6ce4dc, type: 2}
+          left: {fileID: 7400000, guid: aa2ed13847f75d24dbcb6af361052d6f, type: 2}
+          right: {fileID: 7400000, guid: 000eaa97eeb47ee4babd420db83060fe, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: eed1c18665da18843ae82c78697f61a0, type: 2}
+          backward: {fileID: 7400000, guid: c7a2d288fd76587409d83f8ec368ab47, type: 2}
+          left: {fileID: 7400000, guid: a47a80736ff783a4383c2773fef0bec4, type: 2}
+          right: {fileID: 7400000, guid: 95946a3eee8a3174bbff35c1a3ed54f6, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 0bcd73d89bdd09044bdc7cd8e9245ccf, type: 2}
+          backward: {fileID: 7400000, guid: 501a21e814d60414898dfab8bf12a9b6, type: 2}
+          left: {fileID: 7400000, guid: 65fa475fe37b3f74b91b3418a5678c49, type: 2}
+          right: {fileID: 7400000, guid: c6224c4eafe24cc498ded244eb6cdc89, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 0bcd73d89bdd09044bdc7cd8e9245ccf, type: 2}
+          backward: {fileID: 7400000, guid: 501a21e814d60414898dfab8bf12a9b6, type: 2}
+          left: {fileID: 7400000, guid: 65fa475fe37b3f74b91b3418a5678c49, type: 2}
+          right: {fileID: 7400000, guid: c6224c4eafe24cc498ded244eb6cdc89, type: 2}
+          forwardRight: {fileID: 7400000, guid: c6224c4eafe24cc498ded244eb6cdc89,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 556cfc3c05224ac4ea458c8efdc7df94, type: 2}
+          backwardRight: {fileID: 7400000, guid: 369c251b47224544ba1bab12e51909a5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: 65fa475fe37b3f74b91b3418a5678c49,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 7400000, guid: 501a21e814d60414898dfab8bf12a9b6, type: 2}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: ea8b523c5e85c8a41b29554738dbcec0, type: 2}
+          loop: {fileID: 7400000, guid: fabc92661b5f1ea44aaae9f666e261fc, type: 2}
+          end: {fileID: 7400000, guid: 1715cce021e21104089140c00a016fdf, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 0.3
+          fallTimeout: 0.15
+      jog:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+          backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c, type: 2}
+          left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+          right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a, type: 2}
+          backward: {fileID: 7400000, guid: d30c2f4bac966d245a033c04569fcb78, type: 2}
+          left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+          right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 4702f57247f6d554c96830fe577430c1, type: 2}
+          backward: {fileID: 7400000, guid: 10c29041fbd302a42923f3e47d901583, type: 2}
+          left: {fileID: 7400000, guid: 9e3f85926565e5e4987594e641ff3c8c, type: 2}
+          right: {fileID: 7400000, guid: 815e9afaeaf0ebe4fa1417ffedaa153b, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 4702f57247f6d554c96830fe577430c1, type: 2}
+          backward: {fileID: 7400000, guid: 10c29041fbd302a42923f3e47d901583, type: 2}
+          left: {fileID: 7400000, guid: 9e3f85926565e5e4987594e641ff3c8c, type: 2}
+          right: {fileID: 7400000, guid: 815e9afaeaf0ebe4fa1417ffedaa153b, type: 2}
+          forwardRight: {fileID: 7400000, guid: 815e9afaeaf0ebe4fa1417ffedaa153b,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: e81e7f88bba02b042b6c948a7795c233, type: 2}
+          backwardRight: {fileID: 7400000, guid: a1da71fdba8ce2748afc1ce85b498fce,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: 9e3f85926565e5e4987594e641ff3c8c,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 7400000, guid: 10c29041fbd302a42923f3e47d901583, type: 2}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: ea8b523c5e85c8a41b29554738dbcec0, type: 2}
+          loop: {fileID: 7400000, guid: fabc92661b5f1ea44aaae9f666e261fc, type: 2}
+          end: {fileID: 7400000, guid: 1715cce021e21104089140c00a016fdf, type: 2}
+        jumpConfig:
+          jumpHeight: 0.5
+          gravity: 1
+          jumpTimeout: 0.3
+          fallTimeout: 0.15
+      crouch:
+        idle: {fileID: 7400000, guid: 7c9540bd10b6f7e41a0ff68f8a88076d, type: 2}
+        startCardinals:
+          forward: {fileID: 7400000, guid: 4cb52ba62ded21e4b825012d134eb3e6, type: 2}
+          backward: {fileID: 7400000, guid: 7251e5f862fc44b42800bcaebe438fb4, type: 2}
+          left: {fileID: 7400000, guid: d7eb65a7507b0e64faf5b87e5cba21aa, type: 2}
+          right: {fileID: 7400000, guid: 3743b2d6052ae7a4ab0065e253553fc9, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e2a95565b8db0644586e9e7fe00068b7, type: 2}
+          backward: {fileID: 7400000, guid: 5c75f3279ca840a40b5d356d4acc6009, type: 2}
+          left: {fileID: 7400000, guid: 8d774bee70307054db90f09fb556d000, type: 2}
+          right: {fileID: 7400000, guid: 2420f2809cf9ad245b91de3254fbe373, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+          forwardRight: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backwardRight: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 7400000, guid: 89256dad36c2de347b9da4d75014a14d, type: 2}
+          backward: {fileID: 0}
+          left: {fileID: 7400000, guid: ca9fdac9224c41043b72670bf33c3e93, type: 2}
+          right: {fileID: 7400000, guid: ec29d8c5bf44b8541b094e29b3311778, type: 2}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 7400000, guid: 2e28ff5648d5e924f8c4c2f6978bafac, type: 2}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 7400000, guid: a568ce63e301354459bde7970cc25c0c, type: 2}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+      overrideLayers:
+      - name: Default
+        globalPose:
+          motion: {fileID: 0}
+          mask: 
+        movement:
+          motionMask: LowerBodyMask
+          idle: {fileID: 7400000, guid: 56037abd70707e147be7553989974d27, type: 2}
+          walk:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: a125d286e8456af42ad71e633935f507, type: 2}
+              backward: {fileID: 7400000, guid: 0e9c13ca44f0d7147a4568d54b118c59,
+                type: 2}
+              left: {fileID: 7400000, guid: 2021660c04c4e4c4a9d0b4449eb307a9, type: 2}
+              right: {fileID: 7400000, guid: 96f5573aff109074b9c2b7b81e114f93, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: 0fdfc0f698e1faa4fabfc666c12db2d0, type: 2}
+              backward: {fileID: 7400000, guid: 677f1683cf36ae644a01e4a99425a06d,
+                type: 2}
+              left: {fileID: 7400000, guid: de58d779c53c05d438b6e50b2ab0cbf3, type: 2}
+              right: {fileID: 7400000, guid: 9a41e4807b046c24fa5e5970a2bf1a1d, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+              forwardRight: {fileID: 7400000, guid: 979d392a8b1ba8243b7789ec92c81060,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: ba52393070e05ca4488299881fddc294,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: 0b3102cbcdfd9c5489b629b5220dc53a,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: 181984975280d61458323578dfaa36cb,
+                type: 2}
+          jog:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+              backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c,
+                type: 2}
+              left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+              right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a, type: 2}
+              backward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a,
+                type: 2}
+              left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+              right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+              forwardRight: {fileID: 7400000, guid: 977591de1de5c0141a5d626941e97a3e,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: 3580a56dcff0811409b6350c38c80a15,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: a0f53e67a560c9e4394af6450c897e9b,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: f9bd00c79a96bd54489f51d9c26c4b1e,
+                type: 2}
+  - name: UFTwinblades
+    useEightDirectional: 1
+    useOverrideAtStartup: 0
+    general:
+      idle: {fileID: 7400000, guid: 8a9a7e417fca01141a7ca9c2519a1a71, type: 2}
+      crouch:
+        crouchEntry: {fileID: 7400000, guid: 8e5b07b27beb56442a7d5a9ca303687a, type: 2}
+        crouchExit: {fileID: 7400000, guid: 2d88210bb1782ef429c07c1b1d6e427f, type: 2}
+      movementConfig:
+        walkSpeed: 3
+        jogSpeed: 12
+        rotationSmoothTime: 0.12
+        speedChangeRate: 20
+      idleBreaks: []
+    movement:
+      walk:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: 07c74a97f304c4e4abef5df0d85e4d89, type: 2}
+          backward: {fileID: 7400000, guid: 3cb356be383f6164a970a07cab6ce4dc, type: 2}
+          left: {fileID: 7400000, guid: aa2ed13847f75d24dbcb6af361052d6f, type: 2}
+          right: {fileID: 7400000, guid: 000eaa97eeb47ee4babd420db83060fe, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: b6aadfb18967e3147b016a67b241c9ec, type: 2}
+          backward: {fileID: 7400000, guid: c7a2d288fd76587409d83f8ec368ab47, type: 2}
+          left: {fileID: 7400000, guid: a47a80736ff783a4383c2773fef0bec4, type: 2}
+          right: {fileID: 7400000, guid: 95946a3eee8a3174bbff35c1a3ed54f6, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 84be15cbd73422142982dd8537aefaea, type: 2}
+          backward: {fileID: 7400000, guid: 78fe6fc608d0d404ea5b32c2554358d0, type: 2}
+          left: {fileID: 7400000, guid: ab57a7cb75078e7418d9ed5606fe3965, type: 2}
+          right: {fileID: 7400000, guid: af7beb79ab339264aacd20131cc8fe1d, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 84be15cbd73422142982dd8537aefaea, type: 2}
+          backward: {fileID: 7400000, guid: 78fe6fc608d0d404ea5b32c2554358d0, type: 2}
+          left: {fileID: 7400000, guid: ab57a7cb75078e7418d9ed5606fe3965, type: 2}
+          right: {fileID: 7400000, guid: af7beb79ab339264aacd20131cc8fe1d, type: 2}
+          forwardRight: {fileID: 7400000, guid: 1ac522d453a4d6445870cc7385ba429e,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: c3675729ebe0f314da995ad953de81c5, type: 2}
+          backwardRight: {fileID: 7400000, guid: ad71d906dae8118408b5be370b09ad81,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: add3996338c15234c8a2c5cb92931eb6,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 7400000, guid: 78fe6fc608d0d404ea5b32c2554358d0, type: 2}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      jog:
+        motionSpeed: 0.75
+        startCardinals:
+          forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+          backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c, type: 2}
+          left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+          right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: ed6ad7dd4a09a2a4a95a1b3bf2ec2542, type: 2}
+          backward: {fileID: 7400000, guid: d30c2f4bac966d245a033c04569fcb78, type: 2}
+          left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+          right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: a80d54bf9766a22449def7389cc8ba73, type: 2}
+          backward: {fileID: 7400000, guid: 0a84e3bf29b1b7c4e9186bb52d1d55b0, type: 2}
+          left: {fileID: 7400000, guid: e184c322b9ee2114d99c1a35b169aeed, type: 2}
+          right: {fileID: 7400000, guid: 439698b7fb550a44da2696f0f38b3573, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: a80d54bf9766a22449def7389cc8ba73, type: 2}
+          backward: {fileID: 7400000, guid: 0a84e3bf29b1b7c4e9186bb52d1d55b0, type: 2}
+          left: {fileID: 7400000, guid: e184c322b9ee2114d99c1a35b169aeed, type: 2}
+          right: {fileID: 7400000, guid: 439698b7fb550a44da2696f0f38b3573, type: 2}
+          forwardRight: {fileID: 7400000, guid: 09a926105582f17489ff48110b99a6d7,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 43803c242eae13a489ff28dc5c6a2772, type: 2}
+          backwardRight: {fileID: 7400000, guid: 43097b6fa23675c42927aac96de833ce,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: 83108f085ae00f24b89e60a05e12a368,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 7400000, guid: 0a84e3bf29b1b7c4e9186bb52d1d55b0, type: 2}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      crouch:
+        idle: {fileID: 7400000, guid: 7c9540bd10b6f7e41a0ff68f8a88076d, type: 2}
+        startCardinals:
+          forward: {fileID: 7400000, guid: 4cb52ba62ded21e4b825012d134eb3e6, type: 2}
+          backward: {fileID: 7400000, guid: 7251e5f862fc44b42800bcaebe438fb4, type: 2}
+          left: {fileID: 7400000, guid: d7eb65a7507b0e64faf5b87e5cba21aa, type: 2}
+          right: {fileID: 7400000, guid: 3743b2d6052ae7a4ab0065e253553fc9, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e2a95565b8db0644586e9e7fe00068b7, type: 2}
+          backward: {fileID: 7400000, guid: 5c75f3279ca840a40b5d356d4acc6009, type: 2}
+          left: {fileID: 7400000, guid: 8d774bee70307054db90f09fb556d000, type: 2}
+          right: {fileID: 7400000, guid: 2420f2809cf9ad245b91de3254fbe373, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+          forwardRight: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backwardRight: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 7400000, guid: 89256dad36c2de347b9da4d75014a14d, type: 2}
+          backward: {fileID: 0}
+          left: {fileID: 7400000, guid: ca9fdac9224c41043b72670bf33c3e93, type: 2}
+          right: {fileID: 7400000, guid: ec29d8c5bf44b8541b094e29b3311778, type: 2}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 7400000, guid: 2e28ff5648d5e924f8c4c2f6978bafac, type: 2}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 7400000, guid: a568ce63e301354459bde7970cc25c0c, type: 2}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+      overrideLayers:
+      - name: Default
+        globalPose:
+          motion: {fileID: 7400000, guid: 8a9a7e417fca01141a7ca9c2519a1a71, type: 2}
+          mask: RightHandMask
+        movement:
+          motionMask: LowerBodyMask
+          idle: {fileID: 7400000, guid: 8a9a7e417fca01141a7ca9c2519a1a71, type: 2}
+          walk:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: a125d286e8456af42ad71e633935f507, type: 2}
+              backward: {fileID: 7400000, guid: 0e9c13ca44f0d7147a4568d54b118c59,
+                type: 2}
+              left: {fileID: 7400000, guid: 2021660c04c4e4c4a9d0b4449eb307a9, type: 2}
+              right: {fileID: 7400000, guid: 96f5573aff109074b9c2b7b81e114f93, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: b6aadfb18967e3147b016a67b241c9ec, type: 2}
+              backward: {fileID: 7400000, guid: 677f1683cf36ae644a01e4a99425a06d,
+                type: 2}
+              left: {fileID: 7400000, guid: de58d779c53c05d438b6e50b2ab0cbf3, type: 2}
+              right: {fileID: 7400000, guid: 9a41e4807b046c24fa5e5970a2bf1a1d, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+              forwardRight: {fileID: 7400000, guid: 979d392a8b1ba8243b7789ec92c81060,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: ba52393070e05ca4488299881fddc294,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: 0b3102cbcdfd9c5489b629b5220dc53a,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: 181984975280d61458323578dfaa36cb,
+                type: 2}
+          jog:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+              backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c,
+                type: 2}
+              left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+              right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: ed6ad7dd4a09a2a4a95a1b3bf2ec2542, type: 2}
+              backward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a,
+                type: 2}
+              left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+              right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+              forwardRight: {fileID: 7400000, guid: 977591de1de5c0141a5d626941e97a3e,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: 3580a56dcff0811409b6350c38c80a15,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: a0f53e67a560c9e4394af6450c897e9b,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: f9bd00c79a96bd54489f51d9c26c4b1e,
+                type: 2}
+  - name: UFAxe
+    useEightDirectional: 1
+    useOverrideAtStartup: 1
+    general:
+      idle: {fileID: 7400000, guid: 8a9a7e417fca01141a7ca9c2519a1a71, type: 2}
+      crouch:
+        crouchEntry: {fileID: 7400000, guid: 8e5b07b27beb56442a7d5a9ca303687a, type: 2}
+        crouchExit: {fileID: 7400000, guid: 2d88210bb1782ef429c07c1b1d6e427f, type: 2}
+      movementConfig:
+        walkSpeed: 3
+        jogSpeed: 6
+        rotationSmoothTime: 0.12
+        speedChangeRate: 20
+      idleBreaks: []
+    movement:
+      walk:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          forwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      jog:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          forwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      crouch:
+        idle: {fileID: 7400000, guid: 7c9540bd10b6f7e41a0ff68f8a88076d, type: 2}
+        startCardinals:
+          forward: {fileID: 7400000, guid: 4cb52ba62ded21e4b825012d134eb3e6, type: 2}
+          backward: {fileID: 7400000, guid: 7251e5f862fc44b42800bcaebe438fb4, type: 2}
+          left: {fileID: 7400000, guid: d7eb65a7507b0e64faf5b87e5cba21aa, type: 2}
+          right: {fileID: 7400000, guid: 3743b2d6052ae7a4ab0065e253553fc9, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e2a95565b8db0644586e9e7fe00068b7, type: 2}
+          backward: {fileID: 7400000, guid: 5c75f3279ca840a40b5d356d4acc6009, type: 2}
+          left: {fileID: 7400000, guid: 8d774bee70307054db90f09fb556d000, type: 2}
+          right: {fileID: 7400000, guid: 2420f2809cf9ad245b91de3254fbe373, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+          forwardRight: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backwardRight: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 7400000, guid: 89256dad36c2de347b9da4d75014a14d, type: 2}
+          backward: {fileID: 0}
+          left: {fileID: 7400000, guid: ca9fdac9224c41043b72670bf33c3e93, type: 2}
+          right: {fileID: 7400000, guid: ec29d8c5bf44b8541b094e29b3311778, type: 2}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 7400000, guid: 2e28ff5648d5e924f8c4c2f6978bafac, type: 2}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 7400000, guid: a568ce63e301354459bde7970cc25c0c, type: 2}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+      overrideLayers:
+      - name: Default
+        globalPose:
+          motion: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          mask: RightHandMask
+        movement:
+          motionMask: LowerBodyMask
+          idle: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          walk:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: a125d286e8456af42ad71e633935f507, type: 2}
+              backward: {fileID: 7400000, guid: 0e9c13ca44f0d7147a4568d54b118c59,
+                type: 2}
+              left: {fileID: 7400000, guid: 2021660c04c4e4c4a9d0b4449eb307a9, type: 2}
+              right: {fileID: 7400000, guid: 96f5573aff109074b9c2b7b81e114f93, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: 0fdfc0f698e1faa4fabfc666c12db2d0, type: 2}
+              backward: {fileID: 7400000, guid: 677f1683cf36ae644a01e4a99425a06d,
+                type: 2}
+              left: {fileID: 7400000, guid: de58d779c53c05d438b6e50b2ab0cbf3, type: 2}
+              right: {fileID: 7400000, guid: 9a41e4807b046c24fa5e5970a2bf1a1d, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+              forwardRight: {fileID: 7400000, guid: 979d392a8b1ba8243b7789ec92c81060,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: ba52393070e05ca4488299881fddc294,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: 0b3102cbcdfd9c5489b629b5220dc53a,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: 181984975280d61458323578dfaa36cb,
+                type: 2}
+          jog:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+              backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c,
+                type: 2}
+              left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+              right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a, type: 2}
+              backward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a,
+                type: 2}
+              left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+              right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+              forwardRight: {fileID: 7400000, guid: 977591de1de5c0141a5d626941e97a3e,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: 3580a56dcff0811409b6350c38c80a15,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: a0f53e67a560c9e4394af6450c897e9b,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: f9bd00c79a96bd54489f51d9c26c4b1e,
+                type: 2}
+  - name: UFHeavyHammer
+    useEightDirectional: 1
+    useOverrideAtStartup: 1
+    general:
+      idle: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+      crouch:
+        crouchEntry: {fileID: 7400000, guid: 8e5b07b27beb56442a7d5a9ca303687a, type: 2}
+        crouchExit: {fileID: 7400000, guid: 2d88210bb1782ef429c07c1b1d6e427f, type: 2}
+      movementConfig:
+        walkSpeed: 3
+        jogSpeed: 6
+        rotationSmoothTime: 0.12
+        speedChangeRate: 20
+      idleBreaks: []
+    movement:
+      walk:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          forwardRight: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backwardRight: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 0}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      jog:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backward: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          left: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          right: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          forwardRight: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          backwardRight: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 0}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 1
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      crouch:
+        idle: {fileID: 7400000, guid: 7c9540bd10b6f7e41a0ff68f8a88076d, type: 2}
+        startCardinals:
+          forward: {fileID: 7400000, guid: 4cb52ba62ded21e4b825012d134eb3e6, type: 2}
+          backward: {fileID: 7400000, guid: 7251e5f862fc44b42800bcaebe438fb4, type: 2}
+          left: {fileID: 7400000, guid: d7eb65a7507b0e64faf5b87e5cba21aa, type: 2}
+          right: {fileID: 7400000, guid: 3743b2d6052ae7a4ab0065e253553fc9, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e2a95565b8db0644586e9e7fe00068b7, type: 2}
+          backward: {fileID: 7400000, guid: 5c75f3279ca840a40b5d356d4acc6009, type: 2}
+          left: {fileID: 7400000, guid: 8d774bee70307054db90f09fb556d000, type: 2}
+          right: {fileID: 7400000, guid: 2420f2809cf9ad245b91de3254fbe373, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+          forwardRight: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backwardRight: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 7400000, guid: 89256dad36c2de347b9da4d75014a14d, type: 2}
+          backward: {fileID: 0}
+          left: {fileID: 7400000, guid: ca9fdac9224c41043b72670bf33c3e93, type: 2}
+          right: {fileID: 7400000, guid: ec29d8c5bf44b8541b094e29b3311778, type: 2}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 7400000, guid: 2e28ff5648d5e924f8c4c2f6978bafac, type: 2}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 7400000, guid: a568ce63e301354459bde7970cc25c0c, type: 2}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+      overrideLayers:
+      - name: Default
+        globalPose:
+          motion: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          mask: RightAndLeftHandMask
+        movement:
+          motionMask: LowerBodyMask
+          idle: {fileID: 7400000, guid: ac46aad83cae65344822e72de03a85c2, type: 2}
+          walk:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: a125d286e8456af42ad71e633935f507, type: 2}
+              backward: {fileID: 7400000, guid: 0e9c13ca44f0d7147a4568d54b118c59,
+                type: 2}
+              left: {fileID: 7400000, guid: 2021660c04c4e4c4a9d0b4449eb307a9, type: 2}
+              right: {fileID: 7400000, guid: 96f5573aff109074b9c2b7b81e114f93, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: 0fdfc0f698e1faa4fabfc666c12db2d0, type: 2}
+              backward: {fileID: 7400000, guid: 677f1683cf36ae644a01e4a99425a06d,
+                type: 2}
+              left: {fileID: 7400000, guid: de58d779c53c05d438b6e50b2ab0cbf3, type: 2}
+              right: {fileID: 7400000, guid: 9a41e4807b046c24fa5e5970a2bf1a1d, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+              forwardRight: {fileID: 7400000, guid: 979d392a8b1ba8243b7789ec92c81060,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: ba52393070e05ca4488299881fddc294,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: 0b3102cbcdfd9c5489b629b5220dc53a,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: 181984975280d61458323578dfaa36cb,
+                type: 2}
+          jog:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+              backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c,
+                type: 2}
+              left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+              right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a, type: 2}
+              backward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a,
+                type: 2}
+              left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+              right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+              forwardRight: {fileID: 7400000, guid: 977591de1de5c0141a5d626941e97a3e,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: 3580a56dcff0811409b6350c38c80a15,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: a0f53e67a560c9e4394af6450c897e9b,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: f9bd00c79a96bd54489f51d9c26c4b1e,
+                type: 2}
+  - name: UFKatana
+    useEightDirectional: 1
+    useOverrideAtStartup: 1
+    general:
+      idle: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+      crouch:
+        crouchEntry: {fileID: 7400000, guid: 8e5b07b27beb56442a7d5a9ca303687a, type: 2}
+        crouchExit: {fileID: 7400000, guid: 2d88210bb1782ef429c07c1b1d6e427f, type: 2}
+      movementConfig:
+        walkSpeed: 3
+        jogSpeed: 12
+        rotationSmoothTime: 0.12
+        speedChangeRate: 20
+      idleBreaks: []
+    movement:
+      walk:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          forwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 0}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      jog:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backward: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          left: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          right: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          forwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          backwardRight: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 0}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 1
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      crouch:
+        idle: {fileID: 7400000, guid: 7c9540bd10b6f7e41a0ff68f8a88076d, type: 2}
+        startCardinals:
+          forward: {fileID: 7400000, guid: 4cb52ba62ded21e4b825012d134eb3e6, type: 2}
+          backward: {fileID: 7400000, guid: 7251e5f862fc44b42800bcaebe438fb4, type: 2}
+          left: {fileID: 7400000, guid: d7eb65a7507b0e64faf5b87e5cba21aa, type: 2}
+          right: {fileID: 7400000, guid: 3743b2d6052ae7a4ab0065e253553fc9, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e2a95565b8db0644586e9e7fe00068b7, type: 2}
+          backward: {fileID: 7400000, guid: 5c75f3279ca840a40b5d356d4acc6009, type: 2}
+          left: {fileID: 7400000, guid: 8d774bee70307054db90f09fb556d000, type: 2}
+          right: {fileID: 7400000, guid: 2420f2809cf9ad245b91de3254fbe373, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+          forwardRight: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backwardRight: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 7400000, guid: 89256dad36c2de347b9da4d75014a14d, type: 2}
+          backward: {fileID: 0}
+          left: {fileID: 7400000, guid: ca9fdac9224c41043b72670bf33c3e93, type: 2}
+          right: {fileID: 7400000, guid: ec29d8c5bf44b8541b094e29b3311778, type: 2}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 7400000, guid: 2e28ff5648d5e924f8c4c2f6978bafac, type: 2}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 7400000, guid: a568ce63e301354459bde7970cc25c0c, type: 2}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+      overrideLayers:
+      - name: Default
+        globalPose:
+          motion: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          mask: RightAndLeftHandMask
+        movement:
+          motionMask: LowerBodyMask
+          idle: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          walk:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: a125d286e8456af42ad71e633935f507, type: 2}
+              backward: {fileID: 7400000, guid: 0e9c13ca44f0d7147a4568d54b118c59,
+                type: 2}
+              left: {fileID: 7400000, guid: 2021660c04c4e4c4a9d0b4449eb307a9, type: 2}
+              right: {fileID: 7400000, guid: 96f5573aff109074b9c2b7b81e114f93, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: 0fdfc0f698e1faa4fabfc666c12db2d0, type: 2}
+              backward: {fileID: 7400000, guid: 677f1683cf36ae644a01e4a99425a06d,
+                type: 2}
+              left: {fileID: 7400000, guid: de58d779c53c05d438b6e50b2ab0cbf3, type: 2}
+              right: {fileID: 7400000, guid: 9a41e4807b046c24fa5e5970a2bf1a1d, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+              forwardRight: {fileID: 7400000, guid: 979d392a8b1ba8243b7789ec92c81060,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: ba52393070e05ca4488299881fddc294,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: 0b3102cbcdfd9c5489b629b5220dc53a,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: 181984975280d61458323578dfaa36cb,
+                type: 2}
+          jog:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+              backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c,
+                type: 2}
+              left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+              right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a, type: 2}
+              backward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a,
+                type: 2}
+              left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+              right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+              forwardRight: {fileID: 7400000, guid: 977591de1de5c0141a5d626941e97a3e,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: 3580a56dcff0811409b6350c38c80a15,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: a0f53e67a560c9e4394af6450c897e9b,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: f9bd00c79a96bd54489f51d9c26c4b1e,
+                type: 2}
+  - name: UFReverseSword
+    useEightDirectional: 1
+    useOverrideAtStartup: 1
+    general:
+      idle: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+      crouch:
+        crouchEntry: {fileID: 7400000, guid: 8e5b07b27beb56442a7d5a9ca303687a, type: 2}
+        crouchExit: {fileID: 7400000, guid: 2d88210bb1782ef429c07c1b1d6e427f, type: 2}
+      movementConfig:
+        walkSpeed: 3
+        jogSpeed: 6
+        rotationSmoothTime: 0.12
+        speedChangeRate: 20
+      idleBreaks: []
+    movement:
+      walk:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          forwardRight: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backwardRight: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 0}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 0.7
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      jog:
+        motionSpeed: 1
+        startCardinals:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backward: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          left: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          right: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          forwardRight: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce, type: 2}
+          backwardRight: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: 2ba2f9448ea2728498e000042878ddce,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 0}
+          backward: {fileID: 0}
+          left: {fileID: 0}
+          right: {fileID: 0}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 0}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 0}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+        jump:
+          start: {fileID: 7400000, guid: 126b526a6a611ee428b6983600e363d1, type: 2}
+          loop: {fileID: 7400000, guid: 1ec735aeff3ad9f4abc4d2de48914ba1, type: 2}
+          end: {fileID: 7400000, guid: 4d128441e46ae2b4691f225f339af0db, type: 2}
+        jumpConfig:
+          jumpHeight: 1
+          gravity: -10
+          jumpTimeout: 1
+          fallTimeout: 0.15
+      crouch:
+        idle: {fileID: 7400000, guid: 7c9540bd10b6f7e41a0ff68f8a88076d, type: 2}
+        startCardinals:
+          forward: {fileID: 7400000, guid: 4cb52ba62ded21e4b825012d134eb3e6, type: 2}
+          backward: {fileID: 7400000, guid: 7251e5f862fc44b42800bcaebe438fb4, type: 2}
+          left: {fileID: 7400000, guid: d7eb65a7507b0e64faf5b87e5cba21aa, type: 2}
+          right: {fileID: 7400000, guid: 3743b2d6052ae7a4ab0065e253553fc9, type: 2}
+        stopCardinals:
+          forward: {fileID: 7400000, guid: e2a95565b8db0644586e9e7fe00068b7, type: 2}
+          backward: {fileID: 7400000, guid: 5c75f3279ca840a40b5d356d4acc6009, type: 2}
+          left: {fileID: 7400000, guid: 8d774bee70307054db90f09fb556d000, type: 2}
+          right: {fileID: 7400000, guid: 2420f2809cf9ad245b91de3254fbe373, type: 2}
+        loopCardinalsFour:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+        loopCardinalsEight:
+          forward: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backward: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5, type: 2}
+          left: {fileID: 7400000, guid: 09ce949377e7c00409ab542377f3fd73, type: 2}
+          right: {fileID: 7400000, guid: 5c47ecb9d67ea014d87c944882e170a9, type: 2}
+          forwardRight: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342,
+            type: 2}
+          forwardLeft: {fileID: 7400000, guid: 875f368026c65a64d8cb83f6fad24342, type: 2}
+          backwardRight: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+          backwardLeft: {fileID: 7400000, guid: bd28f60fe0f642c4fb48e52bceec75f5,
+            type: 2}
+        pivotCardinals:
+          forward: {fileID: 7400000, guid: 89256dad36c2de347b9da4d75014a14d, type: 2}
+          backward: {fileID: 0}
+          left: {fileID: 7400000, guid: ca9fdac9224c41043b72670bf33c3e93, type: 2}
+          right: {fileID: 7400000, guid: ec29d8c5bf44b8541b094e29b3311778, type: 2}
+        turnInPlace:
+          right45: {fileID: 0}
+          right90: {fileID: 7400000, guid: 2e28ff5648d5e924f8c4c2f6978bafac, type: 2}
+          right135: {fileID: 0}
+          right180: {fileID: 0}
+          left45: {fileID: 0}
+          left90: {fileID: 7400000, guid: a568ce63e301354459bde7970cc25c0c, type: 2}
+          left135: {fileID: 0}
+          left180: {fileID: 0}
+      overrideLayers:
+      - name: Default
+        globalPose:
+          motion: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          mask: RightAndLeftHandMask
+        movement:
+          motionMask: LowerBodyMask
+          idle: {fileID: 7400000, guid: f5274f06bc7e8a3449b179862d0fd92b, type: 2}
+          walk:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: a125d286e8456af42ad71e633935f507, type: 2}
+              backward: {fileID: 7400000, guid: 0e9c13ca44f0d7147a4568d54b118c59,
+                type: 2}
+              left: {fileID: 7400000, guid: 2021660c04c4e4c4a9d0b4449eb307a9, type: 2}
+              right: {fileID: 7400000, guid: 96f5573aff109074b9c2b7b81e114f93, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: 0fdfc0f698e1faa4fabfc666c12db2d0, type: 2}
+              backward: {fileID: 7400000, guid: 677f1683cf36ae644a01e4a99425a06d,
+                type: 2}
+              left: {fileID: 7400000, guid: de58d779c53c05d438b6e50b2ab0cbf3, type: 2}
+              right: {fileID: 7400000, guid: 9a41e4807b046c24fa5e5970a2bf1a1d, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: e60bf478b3839a54e8b2a3807479bc79, type: 2}
+              backward: {fileID: 7400000, guid: c2530d728ef829247ba28f5d70cc1269,
+                type: 2}
+              left: {fileID: 7400000, guid: e8e0c13e08d06c340b6ec79dc7c5c1cf, type: 2}
+              right: {fileID: 7400000, guid: 074926b124e968a4395cdf0824cc5a02, type: 2}
+              forwardRight: {fileID: 7400000, guid: 979d392a8b1ba8243b7789ec92c81060,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: ba52393070e05ca4488299881fddc294,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: 0b3102cbcdfd9c5489b629b5220dc53a,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: 181984975280d61458323578dfaa36cb,
+                type: 2}
+          jog:
+            motionSpeed: 1
+            startCardinals:
+              forward: {fileID: 7400000, guid: 14486c337335d2a4f8b7f14aabf8855f, type: 2}
+              backward: {fileID: 7400000, guid: e4a1b531904de344d89cd135d952db5c,
+                type: 2}
+              left: {fileID: 7400000, guid: aad4bbc4a6eb67c46ac1ddfa3d3cf126, type: 2}
+              right: {fileID: 7400000, guid: 347c828cc32ccf848a5fd9c9dcfc0f83, type: 2}
+            stopCardinals:
+              forward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a, type: 2}
+              backward: {fileID: 7400000, guid: e4e3bd79c285b3646a2e5d052770e63a,
+                type: 2}
+              left: {fileID: 7400000, guid: 672db7ad914e0944caa6b7c1891af6f3, type: 2}
+              right: {fileID: 7400000, guid: 05954377ab5e36f499c136ff9cd81777, type: 2}
+            loopCardinalsFour:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+            loopCardinalsEight:
+              forward: {fileID: 7400000, guid: c633a1436b1328149aad31c688e672d9, type: 2}
+              backward: {fileID: 7400000, guid: bc91283c0c0cc60418c996b08d6debbf,
+                type: 2}
+              left: {fileID: 7400000, guid: d0cfe492f5eacca43afe126b3948efda, type: 2}
+              right: {fileID: 7400000, guid: e86c5cd46b9e1b3499501cc009001ef8, type: 2}
+              forwardRight: {fileID: 7400000, guid: 977591de1de5c0141a5d626941e97a3e,
+                type: 2}
+              forwardLeft: {fileID: 7400000, guid: 3580a56dcff0811409b6350c38c80a15,
+                type: 2}
+              backwardRight: {fileID: 7400000, guid: a0f53e67a560c9e4394af6450c897e9b,
+                type: 2}
+              backwardLeft: {fileID: 7400000, guid: f9bd00c79a96bd54489f51d9c26c4b1e,
+                type: 2}

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="armature-part-element" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); min-width: auto; max-width: none; min-height: auto; flex-direction: row; align-self: auto; max-height: none; justify-content: space-between; align-items: auto; flex-wrap: nowrap; padding-bottom: 5px; width: auto;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-self: center; align-items: auto; justify-content: flex-start; flex-wrap: nowrap; max-width: 400px;">
+            <ui:Label tabindex="-1" text="Prefix" parse-escape-sequences="true" display-tooltip-when-elided="true" name="prefix" style="-unity-text-align: middle-left; margin-right: 0;" />
+            <ui:Label tabindex="-1" text="name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="set-name" style="-unity-text-align: middle-center; margin-right: 10px;" />
+            <ui:Label tabindex="-1" text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-right: 10px; font-size: 14px;" />
+            <ui:Label tabindex="-1" text="Item type" parse-escape-sequences="true" display-tooltip-when-elided="true" name="part-type" style="-unity-text-align: middle-right; color: rgb(255, 255, 123);" />
+        </ui:VisualElement>
+        <ui:Button text="-" display-tooltip-when-elided="true" name="remove-armature-part-button" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; max-width: 20%; min-width: 20px; max-height: 15px; min-height: 15px; align-self: center; width: auto; align-items: auto; justify-content: flex-start;" />
+    </ui:VisualElement>
+</ui:UXML>

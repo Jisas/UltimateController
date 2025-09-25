@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfe658def2cb4b45a1fb62e5d83e774, type: 3}
+  m_Name: AG_Base
+  m_EditorClassIdentifier: 
+  actions:
+  - actionName: EquipMelee
+    actionTag:
+      tag: Action.Equip.Melee
+    actionCost:
+      statType:
+        tag: 
+      value: 0
+    modifiers: []
+    enableActionsForEachWeapon: 1
+    globalAction: {fileID: 0}
+    actions:
+    - itemName: UFAxe
+      action: {fileID: 11400000, guid: cefc3b52718954847a59c9a844345ba0, type: 2}
+    - itemName: UFHeavyHammer
+      action: {fileID: 11400000, guid: 5d9ca610d29dcee43bf97f6c11299650, type: 2}
+    - itemName: UFTwinblades
+      action: {fileID: 11400000, guid: 60461e7a311997d4a9da64c1fef7c721, type: 2}
+    - itemName: UFKatana
+      action: {fileID: 11400000, guid: 3841a6925db5e7042acaf88190f284c4, type: 2}
+    - itemName: UFReverseSword
+      action: {fileID: 11400000, guid: af7267f583e81f749be3b190bbd7795d, type: 2}
+    motion: {fileID: 0}
+    overrideClip: {fileID: 7400000, guid: 722392f9628187e40860e516b8dc3797, type: 2}
+    animStateName: Equip
+    layerMask: UpperBodyMask
+    forceFullBodyOnly: 0
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: UnequipMelee
+    actionTag:
+      tag: Action.Unequip.Melee
+    actionCost:
+      statType:
+        tag: 
+      value: 0
+    modifiers: []
+    enableActionsForEachWeapon: 1
+    globalAction: {fileID: 0}
+    actions:
+    - itemName: UFAxe
+      action: {fileID: 11400000, guid: 9bcdc35561450154f8c92920a034ae94, type: 2}
+    - itemName: UFHeavyHammer
+      action: {fileID: 11400000, guid: 5b525bcb019b7ad4c83b899f4da6da6e, type: 2}
+    - itemName: UFTwinblades
+      action: {fileID: 11400000, guid: cf76539c1d278af46b52b52a0be0e5be, type: 2}
+    - itemName: UFKatana
+      action: {fileID: 11400000, guid: 92ec44ee5ace3c24b95d66d7271e7b63, type: 2}
+    - itemName: UFReverseSword
+      action: {fileID: 11400000, guid: 51be519078e7f414b93b3349425279b5, type: 2}
+    motion: {fileID: 0}
+    overrideClip: {fileID: 7400000, guid: 8edf297c29a098d4aa24f9233f95921b, type: 2}
+    animStateName: Unequip
+    layerMask: UpperBodyMask
+    forceFullBodyOnly: 0
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: Dodge
+    actionTag:
+      tag: Action.Dodge
+    actionCost:
+      statType:
+        tag: Stats.Stamina
+      value: 25
+    modifiers: []
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: 549941639c3e5a24c9210433a23caa56, type: 2}
+    actions: []
+    motion: {fileID: 7400000, guid: 81dcc5d639d56354a99418628233c02b, type: 2}
+    overrideClip: {fileID: 7400000, guid: 8f58a6e5dbe6da94f865f7683ae3ae54, type: 2}
+    animStateName: Dodge
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: Hit
+    actionTag:
+      tag: Action.Hit
+    actionCost:
+      statType:
+        tag: 
+      value: 0
+    modifiers: []
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: 24e236ed7c94a5e459b431398e169cc8, type: 2}
+    actions: []
+    motion: {fileID: 0}
+    overrideClip: {fileID: 7400000, guid: 30e0c6b5302c505438aaccefb9cfd9f3, type: 2}
+    animStateName: Hit
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: UseItem
+    actionTag:
+      tag: Action.UseItem
+    actionCost:
+      statType:
+        tag: None
+      value: 0
+    modifiers: []
+    enableActionsForEachWeapon: 1
+    globalAction: {fileID: 0}
+    actions:
+    - itemName: Health Potion
+      action: {fileID: 11400000, guid: cdba7dea017268f47a276aad9c520651, type: 2}
+    - itemName: Stamina Maximun
+      action: {fileID: 11400000, guid: 68ee13ce603a02244974d4ee3426d05c, type: 2}
+    motion: {fileID: 7400000, guid: edc15b8fda57007499c2d02bb0a93d53, type: 2}
+    overrideClip: {fileID: 7400000, guid: d976d5ff861b63f4595d61af15f5e003, type: 2}
+    animStateName: UseItem
+    layerMask: UpperBodyMask
+    forceFullBodyOnly: 0
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: Dead
+    actionTag:
+      tag: Action.Dead
+    actionCost:
+      statType:
+        tag: None
+      value: 0
+    modifiers: []
+    enableActionsForEachWeapon: 1
+    globalAction: {fileID: 0}
+    actions:
+    - itemName: UFTwinblades
+      action: {fileID: 11400000, guid: c592c861d84b90b40b0140aa37a46898, type: 2}
+    motion: {fileID: 0}
+    overrideClip: {fileID: 7400000, guid: c915ffab501a6ba4084dbfe47acf5bbd, type: 2}
+    animStateName: Dead
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0

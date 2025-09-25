@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="upgrade-element" style="flex-grow: 1; flex-direction: column; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; margin-bottom: 5px;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between; margin-right: 6px; overflow: hidden; margin-bottom: 3px;">
+            <ui:TextField picking-mode="Ignore" label="Name" name="upgrade-name-field" class="upgrade-name-field" style="-unity-font-style: bold; -unity-text-align: middle-left; margin-left: 3px; margin-right: 3px; min-width: 90%;" />
+            <ui:Button text="-" display-tooltip-when-elided="true" name="remove-upgrade-button" style="align-self: center; justify-content: flex-start; align-items: auto; margin-right: 0; margin-left: 0;" />
+        </ui:VisualElement>
+        <uie:ToolbarToggle focusable="false" label="Upgrade Item Stat" value="false" name="upgrade-stat-toggle" style="max-height: 20px; min-height: 20px; -unity-text-align: middle-left; left: auto; border-left-color: rgba(35, 35, 35, 0); border-right-color: rgba(35, 35, 35, 0); border-top-color: rgba(35, 35, 35, 0); border-bottom-color: rgba(35, 35, 35, 0); text-overflow: clip; white-space: normal;" />
+        <ui:VisualElement name="upgrade-stat-content" style="flex-grow: 1; background-color: rgb(60, 60, 60); border-top-width: 0.1px; border-right-width: 0.1px; border-bottom-width: 0.1px; border-left-width: 0.1px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); left: auto; margin-left: -1px; display: none; margin-bottom: 3px;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; align-self: auto; align-items: center; display: flex; overflow: visible; margin-right: 6px; margin-top: 3px;">
+                <ui:FloatField label="Float Field" value="42,2" name="upgrade-value-field" class="upgrade-element-field" style="width: auto; max-width: 30%; min-width: 30%;" />
+                <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 68%; min-width: 68%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; align-items: stretch; margin-top: 0; margin-right: 0; margin-left: 0; margin-bottom: 0;">
+                    <ui:Label tabindex="-1" text="item stat" display-tooltip-when-elided="true" name="upgrade-tag" style="align-self: flex-start; max-width: none; min-width: auto; opacity: 0.8; -unity-text-align: middle-left;" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; overflow: visible; margin-right: 6px; margin-top: 3px; margin-left: 3px; margin-bottom: 3px;">
+                <ui:EnumField type="UltimateFramework.Utils.OperationType, UltimateFramework" name="upgrade-operation-enum" tooltip="operation to be performed" class="upgrade-element-field" style="margin-top: 0; margin-right: 5px; margin-bottom: 0; margin-left: 0; min-width: 15%;" />
+                <ui:EnumField type="UltimateFramework.Utils.ValueType, UltimateFramework" name="upgrade-value-type-field" tooltip="type of value for the operation" class="upgrade-element-field" style="margin-top: 0; margin-right: 5px; margin-bottom: 0; margin-left: 0; min-width: 35%;" />
+                <ui:EnumField type="UltimateFramework.Utils.BaseOn, UltimateFramework" name="upgrade-baseon-enum" tooltip="the operation will be based on" class="upgrade-element-field" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; min-width: 43%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <uie:ToolbarToggle focusable="false" label="Upgrade Item Scaled" value="false" name="upgrade-scale-toggle" style="max-height: 20px; min-height: 20px; -unity-text-align: middle-left; left: auto; border-left-color: rgba(35, 35, 35, 0); border-right-color: rgba(35, 35, 35, 0); border-top-color: rgba(35, 35, 35, 0); border-bottom-color: rgba(35, 35, 35, 0); margin-top: 3px;" />
+        <ui:VisualElement name="upgrade-scale-content" style="flex-grow: 1; background-color: rgb(60, 60, 60); border-top-width: 0.1px; border-right-width: 0.1px; border-bottom-width: 0.1px; border-left-width: 0.1px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); left: auto; margin-left: -1px; display: none; margin-bottom: 3px;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; align-self: auto; align-items: center; display: flex; overflow: visible; margin-right: 6px; margin-top: 3px; margin-bottom: 3px;">
+                <ui:IntegerField value="0" name="scale-index-field" style="max-width: 30%; min-width: 30%;" />
+                <ui:EnumField label="Scale to" type="UltimateFramework.Utils.ScalingLevel, UltimateFramework" name="new-scale-enum" style="max-width: 68%; min-width: 68%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <uie:ToolbarToggle focusable="false" label="Upgrade Item Attribute Modifier" value="false" name="upgrade-attribute-modifier-toggle" style="max-height: 20px; min-height: 20px; -unity-text-align: middle-left; left: auto; border-left-color: rgba(35, 35, 35, 0); border-right-color: rgba(35, 35, 35, 0); border-top-color: rgba(35, 35, 35, 0); border-bottom-color: rgba(35, 35, 35, 0); margin-top: 3px;" />
+        <ui:VisualElement name="upgrade-attribute-modifier-content" style="flex-grow: 1; background-color: rgb(60, 60, 60); border-top-width: 0.1px; border-right-width: 0.1px; border-bottom-width: 0.1px; border-left-width: 0.1px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); left: auto; margin-left: -1px; display: none; margin-bottom: 3px;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; align-self: auto; align-items: center; display: flex; overflow: visible; margin-right: 6px; margin-top: 3px; margin-bottom: 3px;">
+                <ui:IntegerField value="0" name="attribute-modifier-index-field" style="max-width: 30%; min-width: 30%;" />
+                <ui:FloatField value="0" name="attribute-modifier-newvalue-field" style="max-width: 68%; min-width: 68%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <uie:ToolbarToggle focusable="false" label="Upgrade Item Stat Modifier" value="false" name="upgrade-stat-modifier-toggle" style="max-height: 20px; min-height: 20px; -unity-text-align: middle-left; left: auto; border-left-color: rgba(35, 35, 35, 0); border-right-color: rgba(35, 35, 35, 0); border-top-color: rgba(35, 35, 35, 0); border-bottom-color: rgba(35, 35, 35, 0); margin-top: 3px;" />
+        <ui:VisualElement name="upgrade-stat-modifier-content" style="flex-grow: 1; background-color: rgb(60, 60, 60); border-top-width: 0.1px; border-right-width: 0.1px; border-bottom-width: 0.1px; border-left-width: 0.1px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); left: auto; margin-left: -1px; display: none; margin-bottom: 3px;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; align-self: auto; align-items: center; display: flex; overflow: visible; margin-right: 6px; margin-top: 3px; margin-bottom: 3px;">
+                <ui:IntegerField value="0" name="stat-modifier-index-field" style="max-width: 30%; min-width: 30%;" />
+                <ui:FloatField value="0" name="stat-modifier-newvalue-field" style="max-width: 68%; min-width: 68%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

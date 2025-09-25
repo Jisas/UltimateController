@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UltimateFramework/Resources/UIToolkit/USS/LocomotionMapsManagerStyles.uss?fileID=7433441132597879392&amp;guid=b82698e66a2bc7849a00fb5ee69188f3&amp;type=3#LocomotionMapsManagerStyles" />
+    <SplitView fixed-pane-initial-dimension="300" name="root" orientation="Horizontal">
+        <ui:VisualElement name="left-panel" style="flex-grow: 1; overflow: hidden;">
+            <uie:Toolbar style="overflow: hidden; background-color: rgb(34, 34, 34); height: 25px; -unity-text-align: middle-left;">
+                <ui:Label tabindex="-1" text="Locomotion Maps" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 10px; color: rgb(183, 183, 183); -unity-text-align: middle-left; margin-left: 5px;" />
+            </uie:Toolbar>
+            <ui:VisualElement name="maps-container" style="flex-grow: 1; background-color: rgb(56, 56, 56); align-items: center; align-self: stretch; overflow: hidden;">
+                <ui:VisualElement name="top-bar" style="flex-grow: 0; flex-direction: row; justify-content: space-between; align-items: center; margin-top: 10px; align-self: stretch; margin-right: 5px; margin-left: 5px; margin-bottom: 10px;">
+                    <uie:ToolbarSearchField focusable="true" name="search-field" style="flex-grow: 1; width: 70%; max-height: none; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); margin-left: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                    <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-new-map-button" style="margin-top: 0; margin-bottom: 0; width: 16px; height: 16px; padding-top: 0; padding-right: 0; padding-bottom: 2px; padding-left: 0; margin-left: 3px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgb(42, 42, 42); -unity-font-style: bold; font-size: 14px; margin-right: 0;" />
+                </ui:VisualElement>
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="1.07" name="maps-container-scroll-view" horizontal-scroller-visibility="Hidden" mouse-wheel-scroll-size="10" touch-scroll-type="Clamped" elastic-animation-interval-ms="10" class="maps-container-scroll-view" style="flex-grow: 1; align-self: stretch; margin-right: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1; overflow: hidden;">
+            <uie:Toolbar name="Toolbar" style="background-color: rgb(34, 34, 34); justify-content: space-between; height: 25px; font-size: 10px; flex-grow: 1; max-height: 25px; min-height: 25px;">
+                <ui:Label tabindex="-1" text="path" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-left; margin-left: 5px; color: rgb(156, 156, 156); font-size: 12px;" />
+                <ui:Button text="Save Data" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 2px; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(34, 34, 34); margin-top: 0; margin-bottom: 0; border-left-color: rgb(48, 48, 48); margin-left: 0; margin-right: 5px; min-width: 100px; -unity-font-style: normal; font-size: 11px; max-width: 100px; color: rgb(255, 255, 255);" />
+            </uie:Toolbar>
+            <ui:VisualElement name="right-general-container" style="flex-grow: 1; background-color: rgb(40, 40, 40); align-items: stretch; justify-content: space-between;">
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="right-content-container" horizontal-scroller-visibility="Hidden" class="right-content-container" style="overflow: hidden; flex-direction: column; flex-wrap: wrap; flex-grow: 1; min-height: 150px; height: 150px;" />
+                <ui:VisualElement name="pre-visualizer" style="display: flex; overflow: visible; justify-content: flex-end; flex-grow: 0;">
+                    <uie:ToolbarButton parse-escape-sequences="true" display-tooltip-when-elided="true" name="pre-visualizer-button" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; -unity-text-align: middle-left; padding-left: 10px; background-color: rgb(34, 34, 34); -unity-font-style: bold; font-size: 11px; height: 20px; min-height: 20px; flex-direction: row;">
+                        <ui:VisualElement style="flex-grow: 1; background-image: resource(&apos;Img/Handler_Icon&apos;); -unity-background-scale-mode: scale-to-fit; width: 20px; max-width: 20px; min-width: 20px; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                        <ui:Label tabindex="-1" text="Motion Preview" parse-escape-sequences="true" display-tooltip-when-elided="true" style="padding-left: 5px; padding-right: 0;" />
+                    </uie:ToolbarButton>
+                    <ui:VisualElement name="pre-visualizer-container" style="display: none; height: 350px;">
+                        <uie:Toolbar style="height: 20px; padding-right: 5px; padding-left: 5px;">
+                            <uie:ObjectField name="preview-model-field" type="UnityEngine.GameObject, UnityEngine.CoreModule" tooltip="GameObject for preview" />
+                        </uie:Toolbar>
+                        <ui:IMGUIContainer name="preview-content-container" style="flex-grow: 1; display: flex;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>

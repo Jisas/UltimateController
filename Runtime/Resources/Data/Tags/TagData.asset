@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d49c32a77b5e24fb26e68d929223de, type: 3}
+  m_Name: TagData
+  m_EditorClassIdentifier: 
+  tags:
+  - None
+  - Action.Attack
+  - Action.Attack2
+  - Action.Buff
+  - Action.Crouch
+  - Action.Defence
+  - Action.Dodge
+  - Action.Equip.Melee
+  - Action.Equip.Range
+  - Action.HeavyAttack
+  - Action.Hit
+  - Action.JumpAttack
+  - Action.JumpToClimb
+  - Action.Uncrouch
+  - Action.Unequip.Melee
+  - Action.Unequip.Range
+  - Action.WeaponArt
+  - Action.UseItem
+  - Action.Dead
+  - Item.Weapon
+  - Item.Weapon.Melee
+  - Item.Weapon.Range
+  - ItemSlot.MeleeWeapon
+  - ItemSlot.RangedWeapon
+  - ItemSlot.LeftHandWeapon
+  - ItemSlot.Consumable
+  - ItemSlot.Amulet
+  - Moveset.Unarmed
+  - Moveset.TwinBlades
+  - Moveset.OneHandAxe
+  - Moveset.DualSword
+  - Moveset.ReverseDualSword
+  - Moveset.ShieldAndWeapon
+  - Moveset.OneHandSword
+  - Moveset.TwoHandHammer
+  - Moveset.FlotateArrow
+  - ItemStat.Damage
+  - ItemStat.PhysicDefence
+  - ItemStat.MagicDefence
+  - Stats.Health
+  - Stats.Mana
+  - Stats.Stamina
+  - Stats.Experience
+  - PrimaryAttribute.Strenght
+  - PrimaryAttribute.Dexterity
+  - PrimaryAttribute.Vigor
+  - PrimaryAttribute.Endurance
+  - PrimaryAttribute.Inteligence
+  - PrimaryAttribute.Arcane
+  - Attribute.AttackSpeed
+  - Attribute.CriticalChance
+  - Attribute.MoveSpeed
+  - Attribute.StaminaRegen
+  - Attribute.Defence
+  - Attribute.Defence.Block
+  - Attribute.Defence.Slash
+  - Attribute.Defence.Impact
+  - Attribute.Defence.HugeImpact
+  - Attribute.Defence.Penetration
+  - Attribute.Defence.Physic
+  - Attribute.Defence.Magic
+  - Attribute.Defence.Sacred
+  - Attribute.Defence.Lightning
+  - Attribute.Defence.Shadowy
+  - Attribute.Defence.Fire
+  - Attribute.Defence.Ray
+  - Attribute.Defence.Water
+  - Attribute.Defence.Hearth
+  - DamageType.Slash
+  - DamageType.Impact
+  - DamageType.HugeImpact
+  - DamageType.Penetration
+  - DamageType.Physic
+  - DamageType.Magic
+  - DamageType.Sacred
+  - DamageType.Lightning
+  - DamageType.Shadowy
+  - DamageType.Fire
+  - DamageType.Ray
+  - DamageType.Water
+  - DamageType.Hearth
+  - Sound.Wind
+  - Sound.Birds
+  - Sound.Crickets
+  - Sound.PrincipalButton
+  - Sound.SecondaryButton
+  - Sound.Slider
+  - Sound.Slot

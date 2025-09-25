@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5569205bec639c4dbe35c5a28d0410b, type: 3}
+  m_Name: Hit
+  m_EditorClassIdentifier: 
+  cantBeInterrupted: 1
+  motionSpeed: 0.815
+  useDirectionalHit: 1
+  directionalHit:
+    backHit: {fileID: 7400000, guid: e4cc6ca2e7edf3841bd70c52cd485ef3, type: 2}
+    frontHit: {fileID: 7400000, guid: 8b33cfc5dee896d41be5d79d4af42565, type: 2}
+    leftHit: {fileID: 7400000, guid: 9cbb6e8fd36a97442a026be06761d5ec, type: 2}
+    rightHit: {fileID: 7400000, guid: cd27fc57fd6719340acceda5d4942cad, type: 2}

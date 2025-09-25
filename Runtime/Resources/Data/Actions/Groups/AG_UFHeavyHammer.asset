@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfe658def2cb4b45a1fb62e5d83e774, type: 3}
+  m_Name: AG_UFHeavyHammer
+  m_EditorClassIdentifier: 
+  actions:
+  - actionName: Attack
+    actionTag:
+      tag: Action.Attack
+    actionCost:
+      statType:
+        tag: Stats.Stamina
+      value: 15
+    modifiers: []
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: b0574671425fc0d4d9c73e6454cac8ae, type: 2}
+    actions: []
+    motion: {fileID: 0}
+    overrideClip: {fileID: 7400000, guid: e91bb37e2fade0246beabd53539fd4c3, type: 2}
+    animStateName: Attack
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 1
+    motionWarp:
+      minRange: 5
+      maxRange: 10
+      speed: 15
+      stopDistance: 4
+  - actionName: Skill
+    actionTag:
+      tag: Action.WeaponArt
+    actionCost:
+      statType:
+        tag: Stats.Stamina
+      value: 50
+    modifiers: []
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: 0549c0318d45a0946b91090da5bcba0e, type: 2}
+    actions: []
+    motion: {fileID: 7400000, guid: ae8acefb7c1c8384c987ca34e7077360, type: 2}
+    overrideClip: {fileID: 7400000, guid: 3937525b4b130414da9eabcfc39fc196, type: 2}
+    animStateName: Skill
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: Buff
+    actionTag:
+      tag: None
+    actionCost:
+      statType:
+        tag: Stats.Stamina
+      value: 25
+    modifiers:
+    - tag: PrimaryAttribute.Strenght
+      value: 20
+      opType: 0
+      valueType: 0
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: 3ffe2e1ef8f275b46876af503eff9247, type: 2}
+    actions: []
+    motion: {fileID: 7400000, guid: e0fd3a182f33222419a4c4f881b59c4e, type: 2}
+    overrideClip: {fileID: 7400000, guid: 9d48e0fd6a7c82e4cab1eb0f59c07396, type: 2}
+    animStateName: Buff
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0

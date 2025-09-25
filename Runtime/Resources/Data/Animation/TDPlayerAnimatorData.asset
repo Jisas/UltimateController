@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1779fa642f38a044b86ddb6f79956a2, type: 3}
+  m_Name: TDPlayerAnimatorData
+  m_EditorClassIdentifier: 
+  Layers:
+  - LayerIndex: 0
+    States:
+    - FullName: FullBodyMask.JumpLand
+      StateName: JumpLand
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.JumpStart
+      StateName: JumpStart
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.InAir
+      StateName: InAir
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.MM_Unarmed_Idle_Ready
+      StateName: MM_Unarmed_Idle_Ready
+      Behaviours: []
+    - FullName: FullBodyMask.Decider
+      StateName: Decider
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Equip
+      StateName: Equip
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Unequip
+      StateName: Unequip
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Uncrouch
+      StateName: Uncrouch
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Dodge
+      StateName: Dodge
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Buff
+      StateName: Buff
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Skill
+      StateName: Skill
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Hit
+      StateName: Hit
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.UseItem
+      StateName: UseItem
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Attack
+      StateName: Attack
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.HeavyAttack
+      StateName: HeavyAttack
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Dead
+      StateName: Dead
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Crouch.CrouchEntry
+      StateName: CrouchEntry
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Crouch.Crouch Movement
+      StateName: Crouch Movement
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Crouch.CrouchIdle
+      StateName: CrouchIdle
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Crouch.Stop Crouch Movement
+      StateName: Stop Crouch Movement
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Hold Defence.Start Defence
+      StateName: Start Defence
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Actions.Hold Defence.Loop Defence
+      StateName: Loop Defence
+      Behaviours: []
+    - FullName: FullBodyMask.Actions.Hold Defence.End Defence
+      StateName: End Defence
+      Behaviours: []
+    - FullName: FullBodyMask.Locomotion.Idle
+      StateName: Idle
+      Behaviours: []
+    - FullName: FullBodyMask.Locomotion.IdleBreak
+      StateName: IdleBreak
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.Locomotion.Stop Movement.Stop Jog
+      StateName: Stop Jog
+      Behaviours: []
+    - FullName: FullBodyMask.Locomotion.Stop Movement.Stop Walk
+      StateName: Stop Walk
+      Behaviours: []
+    - FullName: FullBodyMask.Locomotion.Movement.EightDirectional
+      StateName: EightDirectional
+      Behaviours: []
+    - FullName: FullBodyMask.Locomotion.Movement.FourDirectional
+      StateName: FourDirectional
+      Behaviours: []
+    - FullName: FullBodyMask.Locomotion.Movement.FFM
+      StateName: FFM
+      Behaviours: []
+    - FullName: FullBodyMask.InitGame.FallDownLoop
+      StateName: FallDownLoop
+      Behaviours:
+      - {fileID: 0}
+    - FullName: FullBodyMask.InitGame.Getup
+      StateName: Getup
+      Behaviours:
+      - {fileID: 0}
+  - LayerIndex: 1
+    States:
+    - FullName: LowerBodyMask.InAir
+      StateName: InAir
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.JumpStart
+      StateName: JumpStart
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.JumpLand
+      StateName: JumpLand
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.Locomotion.Idle
+      StateName: Idle
+      Behaviours: []
+    - FullName: LowerBodyMask.Locomotion.Stop Movement.Stop Jog
+      StateName: Stop Jog
+      Behaviours: []
+    - FullName: LowerBodyMask.Locomotion.Stop Movement.Stop Walk
+      StateName: Stop Walk
+      Behaviours: []
+    - FullName: LowerBodyMask.Locomotion.Movement.EightDirectional
+      StateName: EightDirectional
+      Behaviours: []
+    - FullName: LowerBodyMask.Locomotion.Movement.FourDirectional
+      StateName: FourDirectional
+      Behaviours: []
+    - FullName: LowerBodyMask.Locomotion.Movement.FFM
+      StateName: FFM
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Equip
+      StateName: Equip
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Unequip
+      StateName: Unequip
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Uncrouch
+      StateName: Uncrouch
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.Actions.Dodge
+      StateName: Dodge
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.Actions.Attack
+      StateName: Attack
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Crouch.Crouch Entry
+      StateName: Crouch Entry
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.Actions.Crouch.Crouch Movement
+      StateName: Crouch Movement
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Crouch.Crouch Idle
+      StateName: Crouch Idle
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Crouch.Stop Crouch Movement
+      StateName: Stop Crouch Movement
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Defence.Start Defence
+      StateName: Start Defence
+      Behaviours:
+      - {fileID: 0}
+    - FullName: LowerBodyMask.Actions.Defence.Loop Defence
+      StateName: Loop Defence
+      Behaviours: []
+    - FullName: LowerBodyMask.Actions.Defence.End Defence
+      StateName: End Defence
+      Behaviours: []
+  - LayerIndex: 2
+    States:
+    - FullName: UpperBodyMask.None
+      StateName: None
+      Behaviours: []
+    - FullName: UpperBodyMask.Actions.Equip
+      StateName: Equip
+      Behaviours: []
+    - FullName: UpperBodyMask.Actions.Unequip
+      StateName: Unequip
+      Behaviours: []
+    - FullName: UpperBodyMask.Actions.UseItem
+      StateName: UseItem
+      Behaviours: []
+    - FullName: UpperBodyMask.Actions.Defence.Start Defence
+      StateName: Start Defence
+      Behaviours: []
+    - FullName: UpperBodyMask.Actions.Defence.Loop Defence
+      StateName: Loop Defence
+      Behaviours: []
+    - FullName: UpperBodyMask.Actions.Defence.End Defence
+      StateName: End Defence
+      Behaviours: []
+  - LayerIndex: 3
+    States:
+    - FullName: RightHandMask.GlobalPose
+      StateName: GlobalPose
+      Behaviours: []
+  - LayerIndex: 4
+    States:
+    - FullName: RightAndLeftHandMask.GlobalPose
+      StateName: GlobalPose
+      Behaviours: []

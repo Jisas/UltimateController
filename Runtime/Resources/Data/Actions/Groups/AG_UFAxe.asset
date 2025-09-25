@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfe658def2cb4b45a1fb62e5d83e774, type: 3}
+  m_Name: AG_UFAxe
+  m_EditorClassIdentifier: 
+  actions:
+  - actionName: Attack
+    actionTag:
+      tag: Action.Attack
+    actionCost:
+      statType:
+        tag: 
+      value: 0
+    modifiers: []
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: 7c6dc823ca18cd346995a054ad2a12e0, type: 2}
+    actions: []
+    motion: {fileID: 0}
+    overrideClip: {fileID: 7400000, guid: e91bb37e2fade0246beabd53539fd4c3, type: 2}
+    animStateName: Attack
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0
+  - actionName: HeavyAttack
+    actionTag:
+      tag: Action.HeavyAttack
+    actionCost:
+      statType:
+        tag: Stats.Stamina
+      value: 50
+    modifiers: []
+    enableActionsForEachWeapon: 0
+    globalAction: {fileID: 11400000, guid: 4a6c407f3df8d18448ed32aa431ff652, type: 2}
+    actions: []
+    motion: {fileID: 7400000, guid: e424c1dae20f5014d937feb0a637765c, type: 2}
+    overrideClip: {fileID: 7400000, guid: 11d65500970257f4eae160a316712602, type: 2}
+    animStateName: HeavyAttack
+    layerMask: FullBodyMask
+    forceFullBodyOnly: 1
+    useMotionWarp: 0
+    motionWarp:
+      minRange: 0
+      maxRange: 0
+      speed: 0
+      stopDistance: 0

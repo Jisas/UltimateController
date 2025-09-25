@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="attribute-modifier-element" style="flex-grow: 1; flex-direction: column; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; margin-bottom: 5px;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-around; align-self: auto; align-items: center; display: flex; overflow: hidden;">
+            <ui:FloatField value="42,2" name="attribute-modifier-value-field" class="upgrade-element-field" style="width: auto; max-width: 25%; min-width: 25%;" />
+            <ui:Button display-tooltip-when-elided="true" name="tag-selector-button" style="max-width: 60%; min-width: 60%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgb(42, 42, 42); width: auto; align-self: center; align-items: auto; margin-top: 3px;">
+                <ui:Label tabindex="-1" text="character attribute" display-tooltip-when-elided="true" name="attribute-modifier-tag" style="align-self: flex-start; max-width: none; min-width: auto; opacity: 0.8; -unity-text-align: middle-left;" />
+            </ui:Button>
+            <ui:Button text="-" display-tooltip-when-elided="true" name="remove-attribute-modifier-button" style="align-self: center; justify-content: flex-start; align-items: auto; margin-right: 6px; margin-left: 6px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; max-height: 23px; min-height: 23px; margin-right: 10px; margin-left: -1px; margin-top: 5px;">
+            <ui:EnumField type="UltimateFramework.Utils.OperationType, UltimateFramework" name="attribute-modifier-operation-enum" class="upgrade-element-field" style="max-width: 50%; min-width: 50%;" />
+            <ui:EnumField type="UltimateFramework.Utils.ValueType, UltimateFramework" name="attribute-modifier-value-type-field" class="upgrade-element-field" style="max-width: 50%; min-width: 50%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

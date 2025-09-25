@@ -1,0 +1,47 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="EquipSlotDataElement" style="flex-grow: 0; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; background-color: rgb(51, 51, 51); overflow: hidden; margin-bottom: 3px;">
+        <ui:VisualElement name="top-section" style="flex-grow: 1; flex-direction: row; align-items: center; margin-bottom: 5px; overflow: hidden;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="select-slot-button" style="width: 15px; height: 15px; padding-top: 2.5px; padding-right: 2.5px; padding-bottom: 2.5px; padding-left: 2.5px; margin-top: 0; margin-right: 5px; margin-bottom: 0; margin-left: 1px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(33, 33, 33); border-right-color: rgb(33, 33, 33); border-top-color: rgb(33, 33, 33); border-bottom-color: rgb(33, 33, 33); background-color: rgb(42, 42, 42);">
+                <ui:VisualElement name="checkmark" style="flex-grow: 1; background-color: rgb(255, 255, 255); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;" />
+            </ui:Button>
+            <ui:Button text="T" parse-escape-sequences="true" display-tooltip-when-elided="true" name="use-amount-text-button" tooltip="Use amout text on UI" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; -unity-font-style: bold; font-size: 11px; margin-left: 0; margin-top: 0; margin-bottom: 0; width: 15px; padding-top: 0; padding-bottom: 0; height: 15px; padding-right: 0; padding-left: 0; margin-right: 5px;" />
+            <ui:EnumField type="UltimateFramework.Utils.SocketOrientation, UltimateFramework" name="slot-orientation" tooltip="Slot orientation" style="flex-grow: 50; margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0; width: 50%; font-size: 12px;" />
+            <ui:Button text="-" parse-escape-sequences="true" display-tooltip-when-elided="true" name="remove-button" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; -unity-font-style: normal; font-size: 10px; margin-left: 5px; margin-top: 0; margin-bottom: 0; width: 15px; padding-top: 0; padding-bottom: 0; height: 15px; margin-right: 0; padding-right: 0; padding-left: 0;" />
+        </ui:VisualElement>
+        <uie:ObjectField type="UnityEngine.GameObject, UnityEngine.CoreModule" name="slot-obj-field" style="margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 5px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);" />
+        <ui:VisualElement name="mid-section" style="flex-grow: 1; margin-bottom: 5px;">
+            <ui:VisualElement name="tag-selector-list" style="flex-grow: 1;">
+                <ui:VisualElement name="List-Header" focusable="false" tooltip="Available slot types" style="flex-grow: 0; height: 20px; padding-top: 3px; padding-right: 13px; padding-bottom: 3px; padding-left: 5px; background-color: rgb(36, 36, 36); flex-direction: row; overflow: hidden;">
+                    <ui:VisualElement name="list-opener" focusable="true" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="arrow" style="flex-grow: 0; width: 20px; height: 20px; padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left: 6px; flex-direction: column; align-self: center;">
+                            <ui:VisualElement style="background-image: resource(&apos;Img/arrow&apos;); rotate: 180deg; flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="Slot Tags" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-left; font-size: 10px;" />
+                        <ui:Label tabindex="-1" text="0 elements" parse-escape-sequences="true" display-tooltip-when-elided="true" name="count" style="-unity-text-align: middle-left; font-size: 10px; margin-left: 5px; padding-left: 5px; border-left-color: rgb(70, 70, 70); border-right-color: rgb(70, 70, 70); border-top-color: rgb(70, 70, 70); border-bottom-color: rgb(70, 70, 70); border-left-width: 1px; color: rgb(154, 154, 154);" />
+                    </ui:VisualElement>
+                    <ui:Button text="+" parse-escape-sequences="true" display-tooltip-when-elided="true" name="add-tag-selector" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-color: rgb(55, 55, 55); -unity-background-image-tint-color: rgba(0, 0, 0, 0); width: 13px; height: 13px; align-self: auto; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 3px; left: 2px; -unity-text-align: middle-center; font-size: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="List-Body" style="flex-grow: 1; background-color: rgb(31, 31, 31); overflow: hidden; display: none; padding-bottom: 2px; padding-top: 5px; padding-right: 5px; padding-left: 5px; visibility: visible;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="bot-section" style="flex-grow: 1; display: flex;">
+            <ui:VisualElement name="slot-info" style="flex-grow: 1;">
+                <ui:VisualElement name="List-Header" focusable="false" tooltip="Available slot types" style="flex-grow: 0; height: 20px; padding-top: 3px; padding-right: 13px; padding-bottom: 3px; padding-left: 5px; background-color: rgb(36, 36, 36); flex-direction: row; overflow: hidden;">
+                    <ui:VisualElement name="list-opener" focusable="true" style="flex-grow: 1; flex-direction: row;">
+                        <ui:VisualElement name="arrow" style="flex-grow: 0; width: 20px; height: 20px; padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left: 6px; flex-direction: column; align-self: center;">
+                            <ui:VisualElement style="background-image: resource(&apos;Img/arrow&apos;); rotate: 180deg; flex-grow: 1; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:Label tabindex="-1" text="Slot Info" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-text-align: middle-left; font-size: 10px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="List-Body" style="flex-grow: 1; background-color: rgb(31, 31, 31); overflow: hidden; display: none; padding-bottom: 2px; padding-top: 5px; padding-right: 5px; padding-left: 5px; visibility: visible;">
+                    <ui:Toggle label="Is Empty" focusable="false" name="is-empty" style="margin-right: 0; margin-left: 0; -unity-font-style: italic; font-size: 10px;" />
+                    <ui:IntegerField label="Slot ID" value="0" name="slot-id" focusable="false" style="margin-right: 0; margin-left: 0; margin-bottom: 3px; -unity-font-style: italic; font-size: 10px;" />
+                    <ui:IntegerField label="Item ID" value="0" name="item-id" focusable="false" style="margin-right: 0; margin-left: 0; margin-bottom: 3px; -unity-font-style: italic; font-size: 10px;" />
+                    <ui:IntegerField label="Amount" value="0" name="amount" focusable="false" style="margin-right: 0; margin-left: 0; margin-bottom: 3px; -unity-font-style: italic; font-size: 10px;" />
+                    <ui:IntegerField label="max-amount" value="0" name="max-amount" focusable="false" style="margin-right: 0; margin-left: 0; margin-bottom: 3px; -unity-font-style: italic; font-size: 10px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

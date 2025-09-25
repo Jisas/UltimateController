@@ -1,0 +1,67 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="left-panel" style="flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 1; max-width: 40%; background-color: rgba(31, 31, 31, 0.99); align-self: flex-start; left: 5px; margin-top: 5px; margin-bottom: 5px; min-width: 40%; padding-top: 5px; padding-bottom: 5px;">
+                <ui:VisualElement name="character-stats" style="flex-grow: 1; margin-right: 5px; margin-left: 5px; margin-top: 5px; min-height: auto; max-height: 210px; overflow: hidden; margin-bottom: 0;">
+                    <ui:Label tabindex="-1" text="Attributes And Stats" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; color: rgb(255, 255, 123); font-size: 10px; -unity-font-style: bold;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(31, 31, 31, 0.99); overflow: hidden; min-width: auto; width: 45%; max-width: none; margin-top: 5px; margin-bottom: 5px; right: auto; padding-top: 5px; padding-bottom: 5px; align-self: flex-end; left: -5px; max-height: 135px;">
+                <ui:VisualElement name="character-locomotion" style="flex-grow: 1; margin-right: 5px; margin-left: 5px; margin-top: 0; min-height: auto; max-height: 115px; overflow: hidden; margin-bottom: 0;">
+                    <ui:Label tabindex="-1" text="Locomotion" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; color: rgb(255, 255, 123); font-size: 10px; -unity-font-style: bold;" />
+                    <ui:VisualElement name="elemet-locomotionType" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Locomotion Type:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="forward facing" parse-escape-sequences="true" display-tooltip-when-elided="true" name="locomotionType-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-locomotionMode" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Locomotion Mode:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="walk" parse-escape-sequences="true" display-tooltip-when-elided="true" name="locomotionMode-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-speed" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Speed:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="speed-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-dirx" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="DirX:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dirx-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-diry" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="DirY:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diry-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(31, 31, 31, 0.99); max-width: none; align-self: flex-end; left: -5px; top: auto; min-width: auto; margin-bottom: 5px; max-height: 145px; margin-top: 5px; padding-top: 5px; padding-bottom: 5px; width: 45%;">
+                <ui:VisualElement name="character-equipment" style="flex-grow: 1; margin-right: 5px; margin-left: 5px; margin-top: 5px; min-height: auto; max-height: 130px; overflow: hidden; margin-bottom: 0;">
+                    <ui:Label tabindex="-1" text="Equipment" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; color: rgb(255, 255, 123); font-size: 10px; -unity-font-style: bold;" />
+                    <ui:VisualElement name="elemet-main-weapon" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Main Weapon:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="mainWeapon-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-offhand-weapon" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Off Hand Weapon:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="offHandWeapon-value" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-helment" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Helment:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="helment-vlaue" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-armor" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Armor:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="armor-vlaue" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-pants" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Pants:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="pants-vlaue" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="elemet-boots" style="flex-grow: 1; flex-direction: row; align-items: center; align-self: stretch; max-height: 20px; justify-content: flex-start;">
+                        <ui:Label tabindex="-1" text="Boots:" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                        <ui:Label tabindex="-1" text="None" parse-escape-sequences="true" display-tooltip-when-elided="true" name="boots-vlaue" style="color: rgb(255, 255, 255); font-size: 10px; -unity-font-style: normal; -unity-text-align: middle-left;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
