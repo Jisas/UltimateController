@@ -1,0 +1,8 @@
+﻿
+namespace UltimateController.EconomySystem
+{
+    public static class EconomySettings
+    {
+        public static string name = "Runes";
+    }
+}

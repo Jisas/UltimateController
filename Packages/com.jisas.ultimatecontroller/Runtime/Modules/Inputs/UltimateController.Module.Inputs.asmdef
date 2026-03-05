@@ -1,0 +1,18 @@
+{
+    "name": "UltimateController.Module.Inputs",
+    "rootNamespace": "",
+    "references": [
+        "GUID:64ab927bada38314780d6f4fb2125e08",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:c1f8cd431f6df6244921351c9dbbd274"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

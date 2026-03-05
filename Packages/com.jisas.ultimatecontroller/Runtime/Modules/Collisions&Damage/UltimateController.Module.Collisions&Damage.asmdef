@@ -1,0 +1,16 @@
+{
+    "name": "UltimateController.Module.Collisions&Damage",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ce5b10b12e1ab2f4ea4f6b1e6ec64ed7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

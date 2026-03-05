@@ -1,0 +1,17 @@
+{
+    "name": "UltimateController.Module.Statistics",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6d1a337cb47d4b74d9efe9e25a49d147",
+        "GUID:c1f8cd431f6df6244921351c9dbbd274"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

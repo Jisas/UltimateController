@@ -1,0 +1,17 @@
+{
+    "name": "UltimateController.Module.Inventory",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c1f8cd431f6df6244921351c9dbbd274",
+        "GUID:0d0cda703fd81b849b8ccad0107bef66"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "UltimateController.Module.Serialization",
+    "rootNamespace": "",
+    "references": [
+        "GUID:64ab927bada38314780d6f4fb2125e08"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

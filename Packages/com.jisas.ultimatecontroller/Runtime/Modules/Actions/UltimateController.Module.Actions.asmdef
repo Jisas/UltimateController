@@ -1,0 +1,21 @@
+{
+    "name": "UltimateController.Module.Actions",
+    "rootNamespace": "UltimateController.Actions",
+    "references": [
+        "GUID:64ab927bada38314780d6f4fb2125e08",
+        "GUID:ce5b10b12e1ab2f4ea4f6b1e6ec64ed7",
+        "GUID:6f0e69dd4b86a5142bfc866343ec43f0",
+        "GUID:88a0201535c952b44a4dbdc448b026b9",
+        "GUID:81a4e88239480e14ba49afa11ed37bf5",
+        "GUID:c1f8cd431f6df6244921351c9dbbd274"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

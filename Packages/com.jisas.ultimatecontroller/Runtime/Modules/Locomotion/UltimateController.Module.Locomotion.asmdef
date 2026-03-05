@@ -1,0 +1,21 @@
+{
+    "name": "UltimateController.Module.Locomotion",
+    "rootNamespace": "UltimateController.Locomotion",
+    "references": [
+        "GUID:64ab927bada38314780d6f4fb2125e08",
+        "GUID:ce5b10b12e1ab2f4ea4f6b1e6ec64ed7",
+        "GUID:6279149374f00624eb52a801b634245a",
+        "GUID:c1f8cd431f6df6244921351c9dbbd274",
+        "GUID:6f0e69dd4b86a5142bfc866343ec43f0",
+        "GUID:b4803054e7147224e9cec77e4b40dfec"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,18 @@
+{
+    "name": "UltimateController.Module.Economy",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6d1a337cb47d4b74d9efe9e25a49d147",
+        "GUID:c1f8cd431f6df6244921351c9dbbd274",
+        "GUID:b4803054e7147224e9cec77e4b40dfec"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
