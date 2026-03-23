@@ -1,6 +1,6 @@
 {
-  "name": "com.jisas.ultimateframework",
-  "displayName": "Ultimate Framework",
+  "name": "com.jisas.ultimatecontroller",
+  "displayName": "Ultimate Controller",
   "version": "0.2.0",
   "unity": "6000.0",
   "description": "The ultimate character controller.",

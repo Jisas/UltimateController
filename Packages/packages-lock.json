@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "com.jisas.ultimateframework": {
-      "version": "file:com.jisas.ultimateframework",
+    "com.jisas.ultimatecontroller": {
+      "version": "file:com.jisas.ultimatecontroller",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
