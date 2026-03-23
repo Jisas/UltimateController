@@ -1,0 +1,27 @@
+﻿using System;
+
+namespace UltimateFramework.StatisticsSystem
+{
+    [Serializable]
+    public class Attribute
+    {
+        public TagSelector attributeType = new("None");
+        public float startValue;
+        private float _value;
+
+        public delegate void OnValueChangeDelegate(float newValue);
+        public event OnValueChangeDelegate OnValueChange;
+
+        public float CurrentValue
+        {
+            get { return _value; }
+            set
+            {
+                _value = value;
+                //Debug.Log($"The Attribute {attributeType.tag}, have a value of = {_value}");
+                if (_value != startValue) OnValueChange?.Invoke(_value);
+            }
+        }
+    }
+}
+

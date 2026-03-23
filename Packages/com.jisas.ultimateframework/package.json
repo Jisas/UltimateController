@@ -1,0 +1,31 @@
+{
+  "name": "com.jisas.ultimateframework",
+  "displayName": "Ultimate Framework",
+  "version": "0.2.0",
+  "unity": "6000.0",
+  "description": "The ultimate character controller.",
+  "keywords": [
+    "rpg",
+    "framework",
+    "unity",
+    "editor",
+    "toolkit",
+    "tool"
+  ],
+  "author": {
+    "name": "Jisas",
+    "url": "https://github.com/Jisas",
+    "email": "jesuscarrerodev@gmail.com"
+  },
+  "samples": [
+    {
+      "displayName": "Full Sample",
+      "description": "Full functional sample.",
+      "path": "Samples~/FullSample"
+    }
+  ],
+  "dependencies": {
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.inputsystem": "1.18.0"
+  }
+}

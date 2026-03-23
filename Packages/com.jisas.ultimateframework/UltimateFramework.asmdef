@@ -1,0 +1,17 @@
+{
+    "name": "UltimateFramework",
+    "rootNamespace": "UltimateFramework",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:64ab927bada38314780d6f4fb2125e08"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; flex-direction: row; align-self: auto; justify-content: space-between; padding-bottom: 65px; padding-top: 35px;">
+            <ui:VisualElement name="inventory_container" style="flex-grow: 1; background-color: rgb(24, 24, 24); align-items: stretch; justify-content: flex-start; max-width: 30%; margin-right: 20px; margin-left: 20px; min-width: 30%; width: 30%;">
+                <ui:VisualElement name="inventory_slots_container" style="flex-grow: 1; padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; flex-direction: row; align-items: stretch; justify-content: space-between; flex-wrap: wrap; align-self: auto;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="item_info" style="flex-grow: 1; align-items: auto; justify-content: flex-start; max-width: 30%; margin-right: 20px; margin-left: 20px; width: 30%; min-width: 30%;">
+                <ui:VisualElement name="info_panel" style="flex-grow: 1; background-color: rgb(24, 24, 24); padding-right: 15px; padding-left: 15px; padding-top: 25px; padding-bottom: 25px; justify-content: flex-start; align-self: stretch; align-items: stretch;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="character_info" style="flex-grow: 1; background-color: rgb(24, 24, 24); align-items: stretch; justify-content: flex-start; max-width: 30%; width: 30%; min-width: 30%; margin-right: 20px; margin-left: 20px;">
+                <ui:VisualElement name="info_container" style="flex-grow: 1; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; flex-direction: row; align-items: stretch; justify-content: space-between; flex-wrap: wrap; align-self: auto;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
